@@ -1,0 +1,29 @@
+[
+  {
+    "id": "monobank-black",
+    "bankId": "monobank",
+    "name": "Чорна картка monobank",
+    "paymentSystems": ["mastercard", "visa"],
+    "supportsOwnFunds": true,
+    "supportsCreditFunds": true,
+    "active": true
+  },
+  {
+    "id": "monobank-white",
+    "bankId": "monobank",
+    "name": "Біла картка monobank",
+    "paymentSystems": ["mastercard", "visa"],
+    "supportsOwnFunds": true,
+    "supportsCreditFunds": false,
+    "active": true
+  },
+  {
+    "id": "pumb-vsemoju",
+    "bankId": "pumb",
+    "name": "ВСЕМОЖУ",
+    "paymentSystems": ["mastercard", "visa"],
+    "supportsOwnFunds": true,
+    "supportsCreditFunds": true,
+    "active": true
+  }
+]

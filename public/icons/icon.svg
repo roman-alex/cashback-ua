@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Cashback UA">
+  <rect width="512" height="512" rx="96" fill="#0f766e"/>
+  <circle cx="256" cy="256" r="154" fill="#facc15"/>
+  <path fill="#0f172a" d="M162 278c0-70 45-118 111-118 38 0 72 16 94 44l-43 36c-13-17-29-25-50-25-34 0-56 25-56 63 0 39 22 64 56 64 21 0 37-8 50-25l43 36c-22 28-56 44-94 44-66 0-111-49-111-119z"/>
+  <path fill="#ffffff" d="M128 122h256v42H128zm0 226h256v42H128z" opacity=".9"/>
+</svg>

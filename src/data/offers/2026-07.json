@@ -1,0 +1,334 @@
+{
+  "period": "2026-07",
+  "updatedAt": "2026-07-02T12:00:00+03:00",
+  "offers": [
+    {
+      "id": "monobank-2026-07-products",
+      "offerKey": "monobank-products",
+      "bankId": "monobank",
+      "cardIds": ["monobank-black", "monobank-white"],
+      "type": "category",
+      "title": "Продукти",
+      "description": "Кешбек за категорію Продукти в липні 2026. Категорію потрібно вибрати у застосунку monobank.",
+      "categoryIds": ["products"],
+      "merchantIds": [],
+      "mccCodes": ["5411"],
+      "reward": {
+        "type": "percent",
+        "value": 1,
+        "maxAmount": 500,
+        "currency": "UAH"
+      },
+      "fundingSources": ["own"],
+      "channels": ["online", "offline"],
+      "activation": {
+        "mode": "category-selection",
+        "requiredBeforePurchase": true,
+        "instructions": "Оберіть категорію в застосунку monobank на початку місяця.",
+        "actionUrl": "https://www.monobank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": ["Підвищений кешбек за категоріями застосовується до витрат з власних коштів."]
+      },
+      "validFrom": "2026-07-01",
+      "validTo": "2026-07-31",
+      "source": {
+        "type": "editorial",
+        "url": "https://www.banka.com.ua/2026/06/30/mono-cb-categories/",
+        "verifiedAt": "2026-07-02"
+      },
+      "status": "active"
+    },
+    {
+      "id": "monobank-2026-07-restaurants",
+      "offerKey": "monobank-restaurants",
+      "bankId": "monobank",
+      "cardIds": ["monobank-black", "monobank-white"],
+      "type": "category",
+      "title": "Кафе та ресторани",
+      "description": "Кешбек за категорію Кафе та ресторани в липні 2026. Категорію потрібно вибрати у застосунку monobank.",
+      "categoryIds": ["restaurants"],
+      "merchantIds": [],
+      "mccCodes": ["5812", "5814"],
+      "reward": {
+        "type": "percent",
+        "value": 2,
+        "maxAmount": 500,
+        "currency": "UAH"
+      },
+      "fundingSources": ["own"],
+      "channels": ["online", "offline"],
+      "activation": {
+        "mode": "category-selection",
+        "requiredBeforePurchase": true,
+        "instructions": "Оберіть категорію в застосунку monobank на початку місяця.",
+        "actionUrl": "https://www.monobank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": ["Можна обрати дві категорії кешбеку на місяць."]
+      },
+      "validFrom": "2026-07-01",
+      "validTo": "2026-07-31",
+      "source": {
+        "type": "editorial",
+        "url": "https://www.banka.com.ua/2026/06/30/mono-cb-categories/",
+        "verifiedAt": "2026-07-02"
+      },
+      "status": "active"
+    },
+    {
+      "id": "monobank-2026-07-wog",
+      "offerKey": "monobank-wog",
+      "bankId": "monobank",
+      "cardIds": ["monobank-black", "monobank-white"],
+      "type": "partner",
+      "title": "WOG через WOG PAY (BOX)",
+      "description": "Партнерський кешбек monobank за заправки WOG через WOG PAY (BOX).",
+      "categoryIds": ["fuel"],
+      "merchantIds": ["wog"],
+      "mccCodes": ["5541", "5542"],
+      "reward": {
+        "type": "percent",
+        "value": 3,
+        "maxAmount": 500,
+        "currency": "UAH"
+      },
+      "fundingSources": ["own", "credit"],
+      "channels": ["online"],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Підключіть партнерську пропозицію в застосунку monobank.",
+        "actionUrl": "https://www.monobank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": ["Партнерська пропозиція для оплат через WOG PAY (BOX)."]
+      },
+      "validFrom": "2026-07-01",
+      "validTo": "2026-07-31",
+      "source": {
+        "type": "editorial",
+        "url": "https://www.banka.com.ua/2026/06/30/mono-cb-categories/",
+        "verifiedAt": "2026-07-02"
+      },
+      "status": "active"
+    },
+    {
+      "id": "monobank-2026-07-answear",
+      "offerKey": "monobank-answear",
+      "bankId": "monobank",
+      "cardIds": ["monobank-black", "monobank-white"],
+      "type": "partner",
+      "title": "ANSWEAR.ua",
+      "description": "Партнерський кешбек monobank за онлайн-покупки в ANSWEAR.ua.",
+      "categoryIds": ["clothing"],
+      "merchantIds": ["answear"],
+      "mccCodes": ["5651", "5661"],
+      "reward": {
+        "type": "percent",
+        "value": 7,
+        "maxAmount": 600,
+        "currency": "UAH"
+      },
+      "fundingSources": ["own", "credit"],
+      "channels": ["online"],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Підключіть партнерську пропозицію в застосунку monobank.",
+        "actionUrl": "https://www.monobank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": ["Партнерські пропозиції можна обирати окремо від категорій."]
+      },
+      "validFrom": "2026-07-01",
+      "validTo": "2026-07-31",
+      "source": {
+        "type": "editorial",
+        "url": "https://www.banka.com.ua/2026/06/30/mono-cb-categories/",
+        "verifiedAt": "2026-07-02"
+      },
+      "status": "active"
+    },
+    {
+      "id": "pumb-2026-07-kims",
+      "offerKey": "pumb-kims",
+      "bankId": "pumb",
+      "cardIds": ["pumb-vsemoju"],
+      "type": "partner",
+      "title": "KIMS",
+      "description": "Кешбек ПУМБ за послуги хімчистки KIMS.",
+      "categoryIds": ["dry-cleaning"],
+      "merchantIds": ["kims"],
+      "mccCodes": ["7216"],
+      "reward": {
+        "type": "percent",
+        "value": 10,
+        "maxAmount": 500,
+        "currency": "UAH"
+      },
+      "fundingSources": ["own", "credit"],
+      "channels": ["online", "offline"],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Активуйте кешбек у застосунку ПУМБ перед покупкою.",
+        "actionUrl": "https://www.pumb.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": ["Деякі пропозиції ПУМБ можуть бути персоналізованими."]
+      },
+      "validFrom": "2026-07-01",
+      "validTo": "2026-07-31",
+      "source": {
+        "type": "official",
+        "url": "https://about.pumb.ua/presscenter/news/item/8123-vdkrivajte-vigodi-keshbeku-razom-z-pumb",
+        "verifiedAt": "2026-07-02"
+      },
+      "status": "active"
+    },
+    {
+      "id": "pumb-2026-07-varus",
+      "offerKey": "pumb-varus",
+      "bankId": "pumb",
+      "cardIds": ["pumb-vsemoju"],
+      "type": "partner",
+      "title": "VARUS",
+      "description": "Кешбек ПУМБ за продукти та напої у VARUS.",
+      "categoryIds": ["products"],
+      "merchantIds": ["varus"],
+      "mccCodes": ["5411"],
+      "reward": {
+        "type": "percent",
+        "value": 5,
+        "maxAmount": 500,
+        "currency": "UAH"
+      },
+      "fundingSources": ["own", "credit"],
+      "channels": ["online", "offline"],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Активуйте кешбек у застосунку ПУМБ перед покупкою.",
+        "actionUrl": "https://www.pumb.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": ["У джерелі також згадується окрема пропозиція VARUS до 7%."]
+      },
+      "validFrom": "2026-07-01",
+      "validTo": "2026-07-31",
+      "source": {
+        "type": "official",
+        "url": "https://about.pumb.ua/presscenter/news/item/8123-vdkrivajte-vigodi-keshbeku-razom-z-pumb",
+        "verifiedAt": "2026-07-02"
+      },
+      "status": "active"
+    },
+    {
+      "id": "pumb-2026-07-upg",
+      "offerKey": "pumb-upg",
+      "bankId": "pumb",
+      "cardIds": ["pumb-vsemoju"],
+      "type": "partner",
+      "title": "UPG",
+      "description": "Кешбек ПУМБ за пальне та інше в UPG.",
+      "categoryIds": ["fuel"],
+      "merchantIds": ["upg"],
+      "mccCodes": ["5541", "5542"],
+      "reward": {
+        "type": "percent",
+        "value": 2,
+        "maxAmount": 500,
+        "currency": "UAH"
+      },
+      "fundingSources": ["own", "credit"],
+      "channels": ["online", "offline"],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Активуйте кешбек у застосунку ПУМБ перед покупкою.",
+        "actionUrl": "https://www.pumb.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": ["Приклад партнерського кешбеку ПУМБ для АЗС."]
+      },
+      "validFrom": "2026-07-01",
+      "validTo": "2026-07-31",
+      "source": {
+        "type": "official",
+        "url": "https://about.pumb.ua/presscenter/news/item/8123-vdkrivajte-vigodi-keshbeku-razom-z-pumb",
+        "verifiedAt": "2026-07-02"
+      },
+      "status": "active"
+    },
+    {
+      "id": "pumb-2026-07-med-magazin",
+      "offerKey": "pumb-med-magazin",
+      "bankId": "pumb",
+      "cardIds": ["pumb-vsemoju"],
+      "type": "partner",
+      "title": "Med-Magazin.ua",
+      "description": "Кешбек ПУМБ на медичну техніку та інше в Med-Magazin.ua.",
+      "categoryIds": ["pharmacies"],
+      "merchantIds": ["med-magazin"],
+      "mccCodes": ["5912"],
+      "reward": {
+        "type": "percent",
+        "value": 5,
+        "maxAmount": 500,
+        "currency": "UAH"
+      },
+      "fundingSources": ["own", "credit"],
+      "channels": ["online"],
+      "activation": {
+        "mode": "personal-confirmation",
+        "requiredBeforePurchase": true,
+        "instructions": "Перевірте доступність і активуйте персональну пропозицію в застосунку ПУМБ.",
+        "actionUrl": "https://www.pumb.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": ["ПУМБ зазначає, що деякі пропозиції є персоналізованими."]
+      },
+      "validFrom": "2026-07-01",
+      "validTo": "2026-07-31",
+      "source": {
+        "type": "official",
+        "url": "https://about.pumb.ua/presscenter/news/item/8123-vdkrivajte-vigodi-keshbeku-razom-z-pumb",
+        "verifiedAt": "2026-07-02"
+      },
+      "status": "active"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "products",
+    "name": "Продукти",
+    "aliases": ["супермаркети", "їжа", "продуктові магазини", "groceries"],
+    "mccCodes": ["5411"]
+  },
+  {
+    "id": "fuel",
+    "name": "Пальне",
+    "aliases": ["азс", "заправки", "паливо", "fuel"],
+    "mccCodes": ["5541", "5542"]
+  },
+  {
+    "id": "restaurants",
+    "name": "Кафе та ресторани",
+    "aliases": ["ресторани", "кафе", "доставка їжі", "restaurants"],
+    "mccCodes": ["5812", "5814"]
+  },
+  {
+    "id": "dry-cleaning",
+    "name": "Хімчистка",
+    "aliases": ["хімчистка", "пральня", "dry cleaning"],
+    "mccCodes": ["7216"]
+  },
+  {
+    "id": "electronics",
+    "name": "Електроніка та техніка",
+    "aliases": ["техніка", "гаджети", "electronics"],
+    "mccCodes": ["5732"]
+  },
+  {
+    "id": "pharmacies",
+    "name": "Аптеки та здоров'я",
+    "aliases": ["аптеки", "медицина", "здоров'я", "pharmacies"],
+    "mccCodes": ["5912"]
+  },
+  {
+    "id": "clothing",
+    "name": "Одяг і взуття",
+    "aliases": ["одяг", "взуття", "fashion", "clothes"],
+    "mccCodes": ["5651", "5661"]
+  },
+  {
+    "id": "taxi",
+    "name": "Таксі",
+    "aliases": ["поїздки", "перевезення", "taxi"],
+    "mccCodes": ["4121"]
+  },
+  {
+    "id": "cinema",
+    "name": "Кіно",
+    "aliases": ["кінотеатр", "cinema"],
+    "mccCodes": ["7832"]
+  },
+  {
+    "id": "flowers",
+    "name": "Квіти",
+    "aliases": ["флористика", "flowers"],
+    "mccCodes": ["5992"]
+  },
+  {
+    "id": "education",
+    "name": "Освіта",
+    "aliases": ["навчання", "курси", "education"],
+    "mccCodes": ["8299"]
+  }
+]
