@@ -1,7 +1,7 @@
+import { z } from "zod";
+
 import { monthlyOffersDataSchema } from "@/schemas/data";
 import type { MonthlyOffersData } from "@/types/cashback";
-
-type MonthlyOffersModuleMap = Record<string, unknown>;
 
 export type CurrentMonthOffersResult =
   | {
@@ -17,61 +17,59 @@ export type CurrentMonthOffersResult =
       latestArchivePeriod: string | null;
     };
 
-const monthlyOfferModules = import.meta.glob("../../data/offers/*.json", {
-  eager: true,
-  import: "default",
-}) as MonthlyOffersModuleMap;
+const baseUrl =
+  (import.meta as ImportMeta & { env?: { BASE_URL?: string } }).env
+    ?.BASE_URL ?? "/";
+const dataBaseUrl = `${baseUrl}data`;
 
-function getPeriodFromPath(filePath: string): string {
-  return filePath.split("/").at(-1)?.replace(".json", "") ?? "";
+const offerIndexSchema = z.object({
+  periods: z.array(z.string().regex(/^\d{4}-\d{2}$/)).default([]),
+});
+
+async function fetchJson(path: string): Promise<unknown> {
+  const response = await fetch(`${dataBaseUrl}/${path}`);
+
+  if (!response.ok) {
+    throw new Error(`Unable to load ${path}: ${response.status}`);
+  }
+
+  return response.json() as Promise<unknown>;
 }
 
-function readMonthlyOfferFiles(): MonthlyOffersData[] {
-  return Object.entries(monthlyOfferModules)
-    .map(([filePath, moduleValue]) => {
-      const parsed = monthlyOffersDataSchema.safeParse(moduleValue);
+export async function getAllMonthlyOfferPeriods(): Promise<string[]> {
+  const indexJson = await fetchJson("offers/index.json");
+  const index = offerIndexSchema.parse(indexJson);
 
-      if (!parsed.success) {
-        return null;
-      }
-
-      const period = getPeriodFromPath(filePath);
-
-      if (parsed.data.period !== period) {
-        return null;
-      }
-
-      return parsed.data;
-    })
-    .filter((data): data is MonthlyOffersData => data !== null)
-    .sort((left, right) => left.period.localeCompare(right.period));
+  return [...index.periods].sort();
 }
 
-const monthlyOfferFiles = readMonthlyOfferFiles();
+export async function getLatestArchivePeriod(): Promise<string | null> {
+  const periods = await getAllMonthlyOfferPeriods();
 
-export function getAllMonthlyOffers(): MonthlyOffersData[] {
-  return monthlyOfferFiles;
+  return periods.at(-1) ?? null;
 }
 
-export function getAllMonthlyOfferPeriods(): string[] {
-  return monthlyOfferFiles.map((file) => file.period);
-}
-
-export function getLatestArchivePeriod(): string | null {
-  return monthlyOfferFiles.at(-1)?.period ?? null;
-}
-
-export function getMonthlyOffers(period: string): MonthlyOffersData | null {
-  return monthlyOfferFiles.find((file) => file.period === period) ?? null;
-}
-
-export function getCurrentMonthOffers(
+export async function getMonthlyOffers(
   period: string
-): CurrentMonthOffersResult {
-  const data = getMonthlyOffers(period);
-  const latestArchivePeriod = getLatestArchivePeriod();
+): Promise<MonthlyOffersData | null> {
+  const periods = await getAllMonthlyOfferPeriods();
 
-  if (data) {
+  if (!periods.includes(period)) {
+    return null;
+  }
+
+  return loadMonthlyOffers(period);
+}
+
+export async function getCurrentMonthOffers(
+  period: string
+): Promise<CurrentMonthOffersResult> {
+  const periods = await getAllMonthlyOfferPeriods();
+  const latestArchivePeriod = periods.at(-1) ?? null;
+
+  if (periods.includes(period)) {
+    const data = await loadMonthlyOffers(period);
+
     return {
       status: "available",
       period,
@@ -86,4 +84,15 @@ export function getCurrentMonthOffers(
     data: null,
     latestArchivePeriod,
   };
+}
+
+async function loadMonthlyOffers(period: string): Promise<MonthlyOffersData> {
+  const monthlyJson = await fetchJson(`offers/${period}.json`);
+  const data = monthlyOffersDataSchema.parse(monthlyJson);
+
+  if (data.period !== period) {
+    throw new Error(`Offer file period mismatch for ${period}`);
+  }
+
+  return data;
 }

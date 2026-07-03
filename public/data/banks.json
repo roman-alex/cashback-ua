@@ -1,0 +1,44 @@
+[
+  {
+    "id": "monobank",
+    "name": "monobank",
+    "slug": "monobank",
+    "logo": "/logos/monobank.svg",
+    "active": true
+  },
+  {
+    "id": "pumb",
+    "name": "ПУМБ",
+    "slug": "pumb",
+    "logo": "/logos/pumb.svg",
+    "active": true
+  },
+  {
+    "id": "raiffeisen",
+    "name": "Райфайзен",
+    "slug": "raiffeisen",
+    "logo": "/logos/raiffeisen.svg",
+    "active": true
+  },
+  {
+    "id": "sense",
+    "name": "Sense",
+    "slug": "sense",
+    "logo": "/logos/sense.svg",
+    "active": true
+  },
+  {
+    "id": "kasta",
+    "name": "Kasta",
+    "slug": "kasta",
+    "logo": "/logos/kasta.svg",
+    "active": true
+  },
+  {
+    "id": "abank",
+    "name": "А-Банк",
+    "slug": "abank",
+    "logo": "/logos/abank.svg",
+    "active": true
+  }
+]

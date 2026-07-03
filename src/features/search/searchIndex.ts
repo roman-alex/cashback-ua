@@ -1,11 +1,10 @@
 import MiniSearch from "minisearch";
 
+import { normalizeSearchText } from "@/lib/search/normalize";
 import {
   getBankById,
-  getCategories,
-  getMerchants,
+  type StaticCashbackData,
 } from "@/lib/static-data/staticDataRepository";
-import { normalizeSearchText } from "@/lib/search/normalize";
 import type { CashbackOffer, OfferSearchMatch } from "@/types/cashback";
 
 import type { OfferSearchResult, SearchableOffer, SearchDocument } from "./types";
@@ -13,17 +12,16 @@ import type { OfferSearchResult, SearchableOffer, SearchDocument } from "./types
 const textMatchScore = 10;
 
 export function buildSearchableOffers(
-  offers: CashbackOffer[]
+  offers: CashbackOffer[],
+  staticData: StaticCashbackData
 ): SearchableOffer[] {
-  const merchants = getMerchants();
-  const categories = getCategories();
-
   return offers.map((offer) => {
-    const bank = getBankById(offer.bankId);
-    const offerMerchants = merchants.filter((merchant) =>
+    const bank = getBankById(staticData, offer.bankId);
+    const bankAliases = getBankSearchAliases(offer.bankId);
+    const offerMerchants = staticData.merchants.filter((merchant) =>
       offer.merchantIds.includes(merchant.id)
     );
-    const offerCategories = categories.filter((category) =>
+    const offerCategories = staticData.categories.filter((category) =>
       offer.categoryIds.includes(category.id)
     );
     const merchantNames = offerMerchants.map((merchant) => merchant.name);
@@ -37,6 +35,7 @@ export function buildSearchableOffers(
       offerId: offer.id,
       title: normalizeSearchText(offer.title),
       bankName: normalizeSearchText(bank?.name ?? ""),
+      bankAliases: normalizeSearchText(bankAliases.join(" ")),
       merchantNames: normalizeSearchText(merchantNames.join(" ")),
       merchantAliases: normalizeSearchText(merchantAliases.join(" ")),
       categoryNames: normalizeSearchText(categoryNames.join(" ")),
@@ -45,6 +44,7 @@ export function buildSearchableOffers(
         [
           offer.title,
           bank?.name ?? "",
+          ...bankAliases,
           ...merchantNames,
           ...merchantAliases,
           ...categoryNames,
@@ -56,6 +56,7 @@ export function buildSearchableOffers(
     return {
       offer,
       document,
+      bankAliases,
       merchantNames,
       merchantAliases,
       categoryNames,
@@ -66,10 +67,11 @@ export function buildSearchableOffers(
 
 export function searchOffers(
   offers: CashbackOffer[],
-  query: string
+  query: string,
+  staticData: StaticCashbackData
 ): OfferSearchResult[] {
   const normalizedQuery = normalizeSearchText(query);
-  const searchableOffers = buildSearchableOffers(offers);
+  const searchableOffers = buildSearchableOffers(offers, staticData);
 
   if (normalizedQuery.length === 0) {
     return searchableOffers.map((searchableOffer) => ({
@@ -95,6 +97,7 @@ export function searchOffers(
     fields: [
       "title",
       "bankName",
+      "bankAliases",
       "merchantNames",
       "merchantAliases",
       "categoryNames",
@@ -106,6 +109,8 @@ export function searchOffers(
       boost: {
         merchantNames: 4,
         merchantAliases: 3,
+        bankName: 2,
+        bankAliases: 2,
         categoryNames: 2,
         categoryAliases: 1.5,
         title: 1.25,
@@ -161,6 +166,10 @@ function getExactMatch(
     return { type: "merchant-alias", score: 90 };
   }
 
+  if (containsExactValue(searchableOffer.bankAliases, normalizedQuery)) {
+    return { type: "text", score: 80 };
+  }
+
   if (containsExactValue(searchableOffer.categoryNames, normalizedQuery)) {
     return { type: "category", score: 70 };
   }
@@ -174,4 +183,23 @@ function getExactMatch(
 
 function containsExactValue(values: string[], normalizedQuery: string) {
   return values.some((value) => normalizeSearchText(value) === normalizedQuery);
+}
+
+function getBankSearchAliases(bankId: string): string[] {
+  switch (bankId) {
+    case "monobank":
+      return ["mono", "моно", "монобанк"];
+    case "pumb":
+      return ["пумб", "pumb"];
+    case "raiffeisen":
+      return ["райф", "райфайзен", "raif", "raiffeisen"];
+    case "sense":
+      return ["sense", "сенс", "сенс банк", "sense bank"];
+    case "kasta":
+      return ["kasta", "каста", "карта каста"];
+    case "abank":
+      return ["абанк", "а банк", "а-банк", "abank", "a-bank"];
+    default:
+      return [];
+  }
 }

@@ -27,7 +27,7 @@ interface ValidationIssue {
 }
 
 const rootDir = path.resolve(fileURLToPath(import.meta.url), "../..");
-const dataDir = path.join(rootDir, "src/data");
+const dataDir = path.join(rootDir, "public/data");
 const offersDir = path.join(dataDir, "offers");
 
 const issues: ValidationIssue[] = [];
@@ -345,7 +345,7 @@ async function main() {
   }
 
   const offerFilenames = (await readdir(offersDir))
-    .filter((filename) => filename.endsWith(".json"))
+    .filter((filename) => filename.endsWith(".json") && filename !== "index.json")
     .sort();
   const offerFiles: Array<{ filename: string; data: MonthlyOffersData }> = [];
 
@@ -362,6 +362,12 @@ async function main() {
     validateReferences({ banks, cards, categories, merchants, offerFiles });
   }
 
+  const offerIndex = await parseOfferIndexFile();
+
+  if (offerIndex) {
+    validateOfferIndex(offerFilenames, offerIndex.periods);
+  }
+
   if (issues.length > 0) {
     for (const issue of issues) {
       console.error(
@@ -374,6 +380,72 @@ async function main() {
   }
 
   console.log(`Data validation passed (${offerFiles.length} monthly file).`);
+}
+
+async function parseOfferIndexFile(): Promise<{ periods: string[] } | null> {
+  const filePath = path.join(offersDir, "index.json");
+
+  try {
+    const json = await readJsonFile(filePath);
+    const result = z
+      .object({
+        periods: z.array(z.string().regex(/^\d{4}-\d{2}$/)),
+      })
+      .safeParse(json);
+
+    if (!result.success) {
+      formatZodIssues("offers/index.json", "(file)", result.error.issues);
+      return null;
+    }
+
+    return result.data;
+  } catch (error) {
+    addIssue({
+      filename: "offers/index.json",
+      entityId: "(file)",
+      field: "(root)",
+      message: error instanceof Error ? error.message : "Unable to read file",
+    });
+    return null;
+  }
+}
+
+function validateOfferIndex(offerFilenames: string[], periods: string[]) {
+  const filePeriods = offerFilenames.map((filename) =>
+    filename.replace(/\.json$/, "")
+  );
+  const uniquePeriods = new Set(periods);
+
+  if (uniquePeriods.size !== periods.length) {
+    addIssue({
+      filename: "offers/index.json",
+      entityId: "(file)",
+      field: "periods",
+      message: "Duplicate period in offer index",
+    });
+  }
+
+  for (const period of periods) {
+    if (!filePeriods.includes(period)) {
+      addIssue({
+        filename: "offers/index.json",
+        entityId: period,
+        field: "periods",
+        message: `Missing offer file for indexed period "${period}"`,
+      });
+    }
+  }
+
+  for (const period of filePeriods) {
+    if (!uniquePeriods.has(period)) {
+      addIssue({
+        filename: `offers/${period}.json`,
+        entityId: "(file)",
+        field: "period",
+        message: `Offer file is missing from offers/index.json`,
+      });
+    }
+  }
 }
 
 await main();

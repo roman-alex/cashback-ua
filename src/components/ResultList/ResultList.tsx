@@ -1,10 +1,16 @@
 import { OfferCard } from "@/components/OfferCard/OfferCard";
+import {
+  getBankById,
+  type StaticCashbackData,
+} from "@/lib/static-data/staticDataRepository";
 import type { EvaluatedOffer } from "@/types/cashback";
 
 export function ResultList({
   offers,
+  staticData,
 }: {
   offers: EvaluatedOffer[];
+  staticData: StaticCashbackData;
 }) {
   if (offers.length === 0) {
     return null;
@@ -16,9 +22,18 @@ export function ResultList({
         Знайдено · {offers.length}
       </h2>
       <div className="grid gap-2 lg:grid-cols-2">
-        {offers.map((offer) => (
-          <OfferCard key={offer.offer.id} offer={offer} />
-        ))}
+        {offers.map((offer) => {
+          const bank = getBankById(staticData, offer.offer.bankId);
+
+          return (
+            <OfferCard
+              bankId={offer.offer.bankId}
+              bankName={bank?.name ?? offer.offer.bankId}
+              key={offer.offer.id}
+              offer={offer}
+            />
+          );
+        })}
       </div>
     </section>
   );

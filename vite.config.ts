@@ -14,8 +14,12 @@ export default defineConfig({
         "icons/icon.svg",
         "icons/pwa-192.png",
         "icons/pwa-512.png",
+        "logos/abank.svg",
         "logos/monobank.svg",
         "logos/pumb.svg",
+        "logos/kasta.svg",
+        "logos/raiffeisen.svg",
+        "logos/sense.svg",
       ],
       manifest: {
         name: "Cashback UA",

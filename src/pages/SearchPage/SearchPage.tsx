@@ -4,18 +4,19 @@ import { ResultList } from "@/components/ResultList/ResultList";
 import { SearchInput } from "@/components/SearchInput/SearchInput";
 import { evaluateSearchResults } from "@/features/offer-evaluation/evaluateSearchResults";
 import { formatUkrainianPeriod } from "@/lib/dates/period";
+import { useCashbackData } from "@/hooks/useCashbackData";
 import { useCurrentPeriod } from "@/hooks/useCurrentPeriod";
-import { getCurrentMonthOffers } from "@/lib/monthly-offers/monthlyOffersRepository";
 
 export function SearchPage() {
   const period = useCurrentPeriod();
-  const currentMonthOffers = getCurrentMonthOffers(period);
+  const cashbackData = useCashbackData(period);
   const [query, setQuery] = useState("");
 
   const searchOutput =
-    currentMonthOffers.status === "available"
+    cashbackData.status === "available"
       ? evaluateSearchResults({
-          offers: currentMonthOffers.data.offers,
+          offers: cashbackData.currentMonthOffers.data.offers,
+          staticData: cashbackData.staticData,
           query,
           period,
         })
@@ -25,9 +26,21 @@ export function SearchPage() {
 
   return (
     <section className="space-y-5">
-      {currentMonthOffers.status === "missing" ? (
+      {cashbackData.status === "loading" ? (
+        <EmptyState
+          title="Завантажуємо кешбеки"
+          text="Підтягуємо актуальні дані для пошуку."
+        />
+      ) : cashbackData.status === "error" ? (
+        <EmptyState
+          title="Не вдалося завантажити дані"
+          text="Перевірте підключення або спробуйте оновити сторінку."
+        />
+      ) : cashbackData.status === "missing" ? (
         <MissingCurrentMonthState
-          latestArchivePeriod={currentMonthOffers.latestArchivePeriod}
+          latestArchivePeriod={
+            cashbackData.currentMonthOffers.latestArchivePeriod
+          }
           period={period}
         />
       ) : (
@@ -35,11 +48,14 @@ export function SearchPage() {
           <SearchInput onChange={setQuery} value={query} />
 
           {hasResults && searchOutput ? (
-            <ResultList offers={searchOutput.evaluatedOffers} />
+            <ResultList
+              offers={searchOutput.evaluatedOffers}
+              staticData={cashbackData.staticData}
+            />
           ) : (
             <EmptyState
               title="Немає збігів"
-              text="Додайте актуальні кешбек-пропозиції в JSON, щоб увімкнути пошук."
+              text="Спробуйте іншу назву магазину, сервісу або категорії."
             />
           )}
         </>

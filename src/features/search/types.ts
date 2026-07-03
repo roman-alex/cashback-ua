@@ -8,6 +8,7 @@ export interface SearchDocument {
   offerId: string;
   title: string;
   bankName: string;
+  bankAliases: string;
   merchantNames: string;
   merchantAliases: string;
   categoryNames: string;
@@ -18,6 +19,7 @@ export interface SearchDocument {
 export interface SearchableOffer {
   offer: CashbackOffer;
   document: SearchDocument;
+  bankAliases: string[];
   merchantNames: string[];
   merchantAliases: string[];
   categoryNames: string[];

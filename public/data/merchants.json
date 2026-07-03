@@ -1,0 +1,2127 @@
+[
+  {
+    "id": "avrora",
+    "name": "Аврора",
+    "aliases": [
+      "avrora",
+      "Аврора мультимаркет"
+    ],
+    "categoryIds": [
+      "products"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "answear",
+    "name": "ANSWEAR.ua",
+    "aliases": [
+      "Answear",
+      "Ансвер",
+      "ANSWEAR"
+    ],
+    "categoryIds": [
+      "clothing"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "apteka-anc",
+    "name": "Аптека АНЦ",
+    "aliases": [
+      "АНЦ",
+      "ANC",
+      "Аптека АНЦ"
+    ],
+    "categoryIds": [
+      "pharmacies"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "foxtrot",
+    "name": "Фокстрот",
+    "aliases": [
+      "Foxtrot",
+      "Фокстрот"
+    ],
+    "categoryIds": [
+      "electronics"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "silpo",
+    "name": "Сільпо",
+    "aliases": [
+      "Silpo",
+      "Сильпо",
+      "silpo.ua"
+    ],
+    "categoryIds": [
+      "products"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "ontaxi",
+    "name": "OnTaxi",
+    "aliases": [
+      "ОнТаксі",
+      "On Taxi"
+    ],
+    "categoryIds": [
+      "taxi"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "varus",
+    "name": "VARUS",
+    "aliases": [
+      "Варус",
+      "Varus.ua"
+    ],
+    "categoryIds": [
+      "products"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "loko",
+    "name": "LOKO",
+    "aliases": [
+      "ЛОКО",
+      "Loko"
+    ],
+    "categoryIds": [
+      "restaurants"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "intertop",
+    "name": "INTERTOP",
+    "aliases": [
+      "Інтертоп",
+      "Intertop"
+    ],
+    "categoryIds": [
+      "clothing"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "masterzoo",
+    "name": "MasterZoo",
+    "aliases": [
+      "МастерЗоо",
+      "Master Zoo"
+    ],
+    "categoryIds": [
+      "pets"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "on-klinik",
+    "name": "ОН Клінік",
+    "aliases": [
+      "ОН Клиник",
+      "ON Clinic",
+      "ON Klinik"
+    ],
+    "categoryIds": [
+      "medical"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "taxi838",
+    "name": "TAXI838",
+    "aliases": [
+      "Таксі 838",
+      "Taxi 838"
+    ],
+    "categoryIds": [
+      "taxi"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "budynok-ihrashok",
+    "name": "Будинок іграшок",
+    "aliases": [
+      "Будинок іграшок",
+      "BI",
+      "b-igry"
+    ],
+    "categoryIds": [
+      "toys"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "atl",
+    "name": "АТЛ",
+    "aliases": [
+      "ATL",
+      "АТЛ"
+    ],
+    "categoryIds": [
+      "auto"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "apteka-kopiyka",
+    "name": "Аптека Копійка",
+    "aliases": [
+      "Копійка",
+      "Аптека Копейка"
+    ],
+    "categoryIds": [
+      "pharmacies"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "deka",
+    "name": "DEKA",
+    "aliases": [
+      "ДЕКА",
+      "Deka"
+    ],
+    "categoryIds": [
+      "watches"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "sushi-master",
+    "name": "Sushi Master",
+    "aliases": [
+      "Суші Майстер",
+      "SushiMaster"
+    ],
+    "categoryIds": [
+      "restaurants"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "moyo",
+    "name": "MOYO",
+    "aliases": [
+      "МОЙО",
+      "moyo.ua"
+    ],
+    "categoryIds": [
+      "electronics"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "my-water-shop",
+    "name": "My Water Shop",
+    "aliases": [
+      "Май Вотер Шоп",
+      "MyWaterShop"
+    ],
+    "categoryIds": [
+      "water"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "apteka-shar",
+    "name": "Аптека ШАР@",
+    "aliases": [
+      "Аптека Шара",
+      "ШАР@"
+    ],
+    "categoryIds": [
+      "pharmacies"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "samsung-experience-store",
+    "name": "Samsung Experience Store",
+    "aliases": [
+      "Samsung",
+      "Самсунг"
+    ],
+    "categoryIds": [
+      "electronics"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "readeat",
+    "name": "Readeat.com",
+    "aliases": [
+      "Readeat",
+      "Рідіт"
+    ],
+    "categoryIds": [
+      "books"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "monopizza",
+    "name": "MONOпіца",
+    "aliases": [
+      "MONO pizza",
+      "Монопіца"
+    ],
+    "categoryIds": [
+      "restaurants"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "krkr",
+    "name": "krkr.com.ua",
+    "aliases": [
+      "krkr",
+      "косметика krkr"
+    ],
+    "categoryIds": [
+      "beauty"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "terra-incognita",
+    "name": "Terra Incognita",
+    "aliases": [
+      "Терра Інкогніта",
+      "Terra"
+    ],
+    "categoryIds": [
+      "tourism"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "kibernetyky",
+    "name": "Кібернетики",
+    "aliases": [
+      "Кибернетики",
+      "Kibernetyky"
+    ],
+    "categoryIds": [
+      "electronics"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "brabrabra",
+    "name": "brabrabra",
+    "aliases": [
+      "бра бра бра",
+      "brabra"
+    ],
+    "categoryIds": [
+      "clothing"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "lampala",
+    "name": "Lampala",
+    "aliases": [
+      "Лампала"
+    ],
+    "categoryIds": [
+      "music"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "a-optica",
+    "name": "A-OPTICA",
+    "aliases": [
+      "A Optica",
+      "Оптика А"
+    ],
+    "categoryIds": [
+      "optics"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "46-parallel",
+    "name": "46 Parallel",
+    "aliases": [
+      "46 Паралель",
+      "Parallel wine"
+    ],
+    "categoryIds": [
+      "wine-markets"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "ktc",
+    "name": "KTC.ua",
+    "aliases": [
+      "КТС",
+      "КТС.ua"
+    ],
+    "categoryIds": [
+      "electronics"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "sat-ua",
+    "name": "SAT.UA",
+    "aliases": [
+      "SAT",
+      "САТ"
+    ],
+    "categoryIds": [
+      "freight"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "akvo",
+    "name": "Akvo",
+    "aliases": [
+      "Акво",
+      "Akvo.ua"
+    ],
+    "categoryIds": [
+      "water"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "myplay",
+    "name": "MYplay",
+    "aliases": [
+      "Майплей",
+      "MY play"
+    ],
+    "categoryIds": [
+      "toys"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "sekunda",
+    "name": "Секунда",
+    "aliases": [
+      "Sekunda"
+    ],
+    "categoryIds": [
+      "watches"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "oxford-medical",
+    "name": "Оксфорд Медікал",
+    "aliases": [
+      "Oxford Medical",
+      "Оксфорд Медикал"
+    ],
+    "categoryIds": [
+      "medical"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "gepur",
+    "name": "Gepur",
+    "aliases": [
+      "Гепюр"
+    ],
+    "categoryIds": [
+      "clothing"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "varvar",
+    "name": "VARVAR",
+    "aliases": [
+      "Варвар"
+    ],
+    "categoryIds": [
+      "wine-markets"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "promenu",
+    "name": "PROMENU",
+    "aliases": [
+      "ProMenu",
+      "ПроМеню"
+    ],
+    "categoryIds": [
+      "home"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "brayval-coffee",
+    "name": "Brayval-coffee",
+    "aliases": [
+      "Brayval",
+      "Брейвал"
+    ],
+    "categoryIds": [
+      "coffee"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "sambag",
+    "name": "Sambag",
+    "aliases": [
+      "Самбег",
+      "Sam bag"
+    ],
+    "categoryIds": [
+      "bags"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "sova",
+    "name": "SOVA",
+    "aliases": [
+      "Сова"
+    ],
+    "categoryIds": [
+      "jewelry"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "teren",
+    "name": "Teren",
+    "aliases": [
+      "Терен"
+    ],
+    "categoryIds": [
+      "security"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "rice-fish",
+    "name": "Rice&Fish",
+    "aliases": [
+      "Rice and Fish",
+      "Райс енд Фіш"
+    ],
+    "categoryIds": [
+      "restaurants"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "lovespace",
+    "name": "LOVESPACE",
+    "aliases": [
+      "Love Space",
+      "Лавспейс"
+    ],
+    "categoryIds": [
+      "adult"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "balka-book",
+    "name": "Balka Book",
+    "aliases": [
+      "Балка Бук"
+    ],
+    "categoryIds": [
+      "books"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "teahouse",
+    "name": "TEAHOUSE",
+    "aliases": [
+      "Tea House",
+      "Тіхаус"
+    ],
+    "categoryIds": [
+      "coffee"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "mova",
+    "name": "MOVA",
+    "aliases": [
+      "Мова"
+    ],
+    "categoryIds": [
+      "electronics"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "njoy",
+    "name": "N`JOY",
+    "aliases": [
+      "N'JOY",
+      "NJOY",
+      "Енджой"
+    ],
+    "categoryIds": [
+      "adult"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "mbm-home",
+    "name": "MBM HOME",
+    "aliases": [
+      "МБМ Хоум"
+    ],
+    "categoryIds": [
+      "home"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "apollo-next",
+    "name": "Apollo Next",
+    "aliases": [
+      "Аполло Некст",
+      "Apollo"
+    ],
+    "categoryIds": [
+      "fitness"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "kims",
+    "name": "KIMS",
+    "aliases": [
+      "Кімс",
+      "Кимс",
+      "хімчистка KIMS"
+    ],
+    "categoryIds": [
+      "dry-cleaning"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "aviatsiya-halychyny",
+    "name": "Авіація Галичини",
+    "aliases": [
+      "Авіація Галичини",
+      "Aviation of Halychyna"
+    ],
+    "categoryIds": [
+      "clothing"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "spell",
+    "name": "Spell",
+    "aliases": [
+      "Спелл"
+    ],
+    "categoryIds": [
+      "gifts"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "megogo-books",
+    "name": "MEGOGO BOOKS",
+    "aliases": [
+      "Megogo Books",
+      "Мегого Букс"
+    ],
+    "categoryIds": [
+      "books"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "love-you",
+    "name": "LOVE YOU",
+    "aliases": [
+      "Love You",
+      "Лав Ю"
+    ],
+    "categoryIds": [
+      "jewelry"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "onebyone",
+    "name": "OnebyOne",
+    "aliases": [
+      "One by One",
+      "Ван бай ван"
+    ],
+    "categoryIds": [
+      "clothing"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "lvivska-majsternya-shokoladu",
+    "name": "Львівська майстерня шоколаду",
+    "aliases": [
+      "ЛМС",
+      "Lviv Handmade Chocolate"
+    ],
+    "categoryIds": [
+      "chocolate"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "knygolend",
+    "name": "КнигоЛенд",
+    "aliases": [
+      "Книголенд",
+      "KnygoLand"
+    ],
+    "categoryIds": [
+      "books"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "sushi-icons",
+    "name": "Sushi Icons",
+    "aliases": [
+      "Суші Айконс",
+      "SushiIcons"
+    ],
+    "categoryIds": [
+      "restaurants"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "foodboom",
+    "name": "FoodBoom",
+    "aliases": [
+      "Фудбум",
+      "Food Boom"
+    ],
+    "categoryIds": [
+      "products"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "pleso",
+    "name": "Платформа pleso",
+    "aliases": [
+      "pleso",
+      "Плесо"
+    ],
+    "categoryIds": [
+      "psychotherapy"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "dreame",
+    "name": "Dreame",
+    "aliases": [
+      "Дрім",
+      "Dreame.ua"
+    ],
+    "categoryIds": [
+      "electronics"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "mathema",
+    "name": "Mathema.me",
+    "aliases": [
+      "Mathema",
+      "Математика онлайн"
+    ],
+    "categoryIds": [
+      "education"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "chacha",
+    "name": "ChaCha",
+    "aliases": [
+      "ЧаЧа"
+    ],
+    "categoryIds": [
+      "restaurants"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "duna",
+    "name": "DUNA",
+    "aliases": [
+      "Дюна"
+    ],
+    "categoryIds": [
+      "socks"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "aroma-buro",
+    "name": "Aroma Buro",
+    "aliases": [
+      "Aroma Bureau",
+      "Арома Бюро"
+    ],
+    "categoryIds": [
+      "aroma"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "tourist-insurance",
+    "name": "Туристичне страхування",
+    "aliases": [
+      "страхування туристів",
+      "турполіс"
+    ],
+    "categoryIds": [
+      "insurance"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "fizi",
+    "name": "FIZI",
+    "aliases": [
+      "Фізі"
+    ],
+    "categoryIds": [
+      "healthy-food"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "jura",
+    "name": "JURA",
+    "aliases": [
+      "Юра",
+      "Jura coffee"
+    ],
+    "categoryIds": [
+      "kitchen-appliances",
+      "coffee"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "tehnohata",
+    "name": "Tehnohata",
+    "aliases": [
+      "Технохата"
+    ],
+    "categoryIds": [
+      "kitchen-appliances"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "zamkneni",
+    "name": "Замкнені",
+    "aliases": [
+      "Zamkneni"
+    ],
+    "categoryIds": [
+      "gift-cards"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "swarovski",
+    "name": "Swarovski",
+    "aliases": [
+      "Сваровскі",
+      "Сваровски"
+    ],
+    "categoryIds": [
+      "jewelry",
+      "watches"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "ecosoft",
+    "name": "Ecosoft",
+    "aliases": [
+      "Екософт"
+    ],
+    "categoryIds": [
+      "water"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "carters",
+    "name": "Carter's",
+    "aliases": [
+      "Carters",
+      "Картерс"
+    ],
+    "categoryIds": [
+      "toys",
+      "clothing"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "tramp",
+    "name": "tramp",
+    "aliases": [
+      "Tramp",
+      "Трамп"
+    ],
+    "categoryIds": [
+      "active-leisure",
+      "tourism"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "kredens-cafe",
+    "name": "KREDENS CAFE",
+    "aliases": [
+      "Креденс кафе",
+      "Kredens"
+    ],
+    "categoryIds": [
+      "coffee"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "bosch-store",
+    "name": "Магазин Bosch",
+    "aliases": [
+      "Bosch",
+      "Siemens",
+      "Бош"
+    ],
+    "categoryIds": [
+      "kitchen-appliances"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "mink",
+    "name": "MINK",
+    "aliases": [
+      "Мінк",
+      "mink хімчистка"
+    ],
+    "categoryIds": [
+      "dry-cleaning"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "centr-oka",
+    "name": "Центр Ока",
+    "aliases": [
+      "Центр Ока",
+      "Oka"
+    ],
+    "categoryIds": [
+      "medical"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "smile-medical-clinic",
+    "name": "Smile Medical Clinic",
+    "aliases": [
+      "Smile Medical",
+      "Смайл Медікал"
+    ],
+    "categoryIds": [
+      "dentistry"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "optika-treviso",
+    "name": "Оптика Treviso",
+    "aliases": [
+      "Treviso",
+      "Тревізо"
+    ],
+    "categoryIds": [
+      "optics"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "cornix",
+    "name": "Cornix",
+    "aliases": [
+      "Корнікс"
+    ],
+    "categoryIds": [
+      "sports",
+      "active-leisure"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "brainer",
+    "name": "BRAINER",
+    "aliases": [
+      "Брейнер"
+    ],
+    "categoryIds": [
+      "education"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "say-meow",
+    "name": "Say Meow",
+    "aliases": [
+      "Сей Мяу",
+      "SayMeow"
+    ],
+    "categoryIds": [
+      "pet-furniture"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "online-fitness",
+    "name": "Онлайн Фітнес",
+    "aliases": [
+      "Online Fitness",
+      "онлайн тренування"
+    ],
+    "categoryIds": [
+      "fitness"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "samsonite",
+    "name": "Samsonite",
+    "aliases": [
+      "Самсонайт"
+    ],
+    "categoryIds": [
+      "bags"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "naturehike",
+    "name": "Naturehike",
+    "aliases": [
+      "Nature Hike",
+      "Нейчерхайк"
+    ],
+    "categoryIds": [
+      "tourism"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "kredens-shop",
+    "name": "KREDENS SHOP",
+    "aliases": [
+      "Креденс шоп",
+      "Kredens Shop"
+    ],
+    "categoryIds": [
+      "coffee"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "uzspace",
+    "name": "UZSPACE",
+    "aliases": [
+      "Юзспейс",
+      "UZ Space"
+    ],
+    "categoryIds": [
+      "home"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "korysna-kramnytsia",
+    "name": "Корисна крамниця",
+    "aliases": [
+      "Корисна крамниця",
+      "натуральні продукти"
+    ],
+    "categoryIds": [
+      "healthy-food"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "bomond",
+    "name": "Bomond",
+    "aliases": [
+      "Бомонд"
+    ],
+    "categoryIds": [
+      "beauty"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "chystyi-smak",
+    "name": "ЧИСТИЙ СМАК",
+    "aliases": [
+      "Чистий смак"
+    ],
+    "categoryIds": [
+      "healthy-food"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "akvamarket",
+    "name": "Аквамаркет",
+    "aliases": [
+      "Akvamarket",
+      "Аква маркет"
+    ],
+    "categoryIds": [
+      "plumbing"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "blanknote",
+    "name": "BlankNote",
+    "aliases": [
+      "Бланкнот"
+    ],
+    "categoryIds": [
+      "bags"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "storgom",
+    "name": "STORGOM",
+    "aliases": [
+      "Сторгом"
+    ],
+    "categoryIds": [
+      "tools"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "fopi",
+    "name": "Fopi.ua",
+    "aliases": [
+      "Fopi",
+      "Фопі"
+    ],
+    "categoryIds": [
+      "electronics"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "rock-front",
+    "name": "ROCK FRONT",
+    "aliases": [
+      "Rock Front",
+      "Рок Фронт"
+    ],
+    "categoryIds": [
+      "tourism"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "romital",
+    "name": "Клініка РоміТаль",
+    "aliases": [
+      "РоміТаль",
+      "RomiTal"
+    ],
+    "categoryIds": [
+      "medical"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "base-camp",
+    "name": "Base Camp",
+    "aliases": [
+      "Бейс Кемп"
+    ],
+    "categoryIds": [
+      "tourism"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "auto-insurance",
+    "name": "Автострахування",
+    "aliases": [
+      "страхування авто",
+      "автополіс"
+    ],
+    "categoryIds": [
+      "insurance"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "bugatti",
+    "name": "Bugatti",
+    "aliases": [
+      "Бугатті"
+    ],
+    "categoryIds": [
+      "clothing"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "getapp",
+    "name": "GetApp",
+    "aliases": [
+      "Get App",
+      "Гетап"
+    ],
+    "categoryIds": [
+      "apple-tech"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "support-ua",
+    "name": "SUPPORT.UA",
+    "aliases": [
+      "Support UA",
+      "Саппорт"
+    ],
+    "categoryIds": [
+      "tech-protection"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "roxon",
+    "name": "Roxon",
+    "aliases": [
+      "Роксон"
+    ],
+    "categoryIds": [
+      "knives"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "wog",
+    "name": "WOG",
+    "aliases": [
+      "ВОГ",
+      "WOG PAY"
+    ],
+    "categoryIds": [
+      "fuel"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "parallel",
+    "name": "Parallel",
+    "aliases": [
+      "Паралель",
+      "АЗС Parallel"
+    ],
+    "categoryIds": [
+      "fuel"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "pandora",
+    "name": "Pandora",
+    "aliases": [
+      "Пандора"
+    ],
+    "categoryIds": [
+      "jewelry"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "med-magazin",
+    "name": "Med-Magazin.ua",
+    "aliases": [
+      "Мед-магазин",
+      "Med Magazin"
+    ],
+    "categoryIds": [
+      "medical"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "ameda",
+    "name": "АМЕДА",
+    "aliases": [
+      "Ameda",
+      "Амеда"
+    ],
+    "categoryIds": [
+      "medical"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "concert-ua",
+    "name": "Concert.ua",
+    "aliases": [
+      "Concert",
+      "Концерт юа"
+    ],
+    "categoryIds": [
+      "tickets"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "gemini",
+    "name": "Gemini",
+    "aliases": [
+      "Джеміні"
+    ],
+    "categoryIds": [
+      "coffee"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "buki-school",
+    "name": "BUKI School",
+    "aliases": [
+      "Букі",
+      "Buki"
+    ],
+    "categoryIds": [
+      "education"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "wow-fun",
+    "name": "WOW FUN",
+    "aliases": [
+      "Вау фан",
+      "WowFun"
+    ],
+    "categoryIds": [
+      "toys"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "allo",
+    "name": "Алло",
+    "aliases": [
+      "Allo",
+      "allo.ua",
+      "АЛЛО"
+    ],
+    "categoryIds": [
+      "electronics"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "apteka-911",
+    "name": "Аптека 9-1-1",
+    "aliases": [
+      "Аптека 911",
+      "9-1-1",
+      "911"
+    ],
+    "categoryIds": [
+      "pharmacies"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "fora",
+    "name": "fora.ua",
+    "aliases": [
+      "Фора",
+      "Fora"
+    ],
+    "categoryIds": [
+      "products"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "petslike",
+    "name": "Petslike.ua",
+    "aliases": [
+      "Petslike",
+      "Петслайк"
+    ],
+    "categoryIds": [
+      "pets"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "optimeal-club4paws",
+    "name": "Optimeal & Club4Paws",
+    "aliases": [
+      "Optimeal",
+      "Club4Paws",
+      "Club 4 Paws"
+    ],
+    "categoryIds": [
+      "pets"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "liki24",
+    "name": "Liki24.com",
+    "aliases": [
+      "Liki24",
+      "Ліки24"
+    ],
+    "categoryIds": [
+      "pharmacies"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "ekspres-stryzhka",
+    "name": "Експрес Стрижка",
+    "aliases": [
+      "Express Strizhka",
+      "Експрес стрижка"
+    ],
+    "categoryIds": [
+      "haircuts"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "prm",
+    "name": "PRM.com",
+    "aliases": [
+      "PRM",
+      "prm.ua"
+    ],
+    "categoryIds": [
+      "clothing"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "intertop-app",
+    "name": "INTERTOP APP",
+    "aliases": [
+      "Intertop app",
+      "Інтертоп застосунок"
+    ],
+    "categoryIds": [
+      "clothing"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "manset",
+    "name": "manset.com.ua",
+    "aliases": [
+      "Manset",
+      "Мансет"
+    ],
+    "categoryIds": [
+      "clothing"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "colins",
+    "name": "Colins.ua",
+    "aliases": [
+      "Colin's",
+      "Колінс"
+    ],
+    "categoryIds": [
+      "clothing"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "telemart",
+    "name": "Telemart",
+    "aliases": [
+      "Телемарт",
+      "Telemart.ua"
+    ],
+    "categoryIds": [
+      "electronics"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "klr-bus",
+    "name": "KLR bus",
+    "aliases": [
+      "KLR",
+      "КЛР",
+      "KLR Bus"
+    ],
+    "categoryIds": [
+      "bus-travel"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "yves-rocher",
+    "name": "Yves Rocher",
+    "aliases": [
+      "Ів Роше",
+      "YvesRocher"
+    ],
+    "categoryIds": [
+      "beauty"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "agro-market",
+    "name": "Агро Маркет",
+    "aliases": [
+      "Agromarket",
+      "Agro Market"
+    ],
+    "categoryIds": [
+      "garden"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "modoza",
+    "name": "Modoza",
+    "aliases": [
+      "Модоза"
+    ],
+    "categoryIds": [
+      "clothing"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "must-have",
+    "name": "Must Have",
+    "aliases": [
+      "MustHave",
+      "Маст Хев"
+    ],
+    "categoryIds": [
+      "clothing"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "hillary-cosmetics",
+    "name": "HiLLARY Cosmetics",
+    "aliases": [
+      "Hillary",
+      "HILLARY"
+    ],
+    "categoryIds": [
+      "beauty"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "sisters-aroma",
+    "name": "Sister`s Aroma",
+    "aliases": [
+      "Sister's Aroma",
+      "Sisters Aroma",
+      "Сістерс Арома"
+    ],
+    "categoryIds": [
+      "aroma",
+      "beauty"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "bolt",
+    "name": "Bolt",
+    "aliases": [
+      "Болт",
+      "Bolt scooters"
+    ],
+    "categoryIds": [
+      "scooter-rental",
+      "transport"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "englishdom",
+    "name": "Englishdom",
+    "aliases": [
+      "Інглішдом",
+      "English Dom"
+    ],
+    "categoryIds": [
+      "education"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "iherb",
+    "name": "iHerb",
+    "aliases": [
+      "Айхерб"
+    ],
+    "categoryIds": [
+      "supplements"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "bronui",
+    "name": "Bronui.com",
+    "aliases": [
+      "Bronui",
+      "Бронюй",
+      "Бронюй ком"
+    ],
+    "categoryIds": [
+      "hotels"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "optima-hotels",
+    "name": "Optima Hotels & Resorts",
+    "aliases": [
+      "Optima Hotels",
+      "Оптіма"
+    ],
+    "categoryIds": [
+      "hotels"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "tickets-ua",
+    "name": "Tickets.ua застосунок",
+    "aliases": [
+      "Tickets.ua",
+      "tickets",
+      "Тікетс"
+    ],
+    "categoryIds": [
+      "transport",
+      "air-tickets",
+      "tickets"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "atb",
+    "name": "АТБ",
+    "aliases": [
+      "ATB",
+      "АТБ онлайн"
+    ],
+    "categoryIds": [
+      "products"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "antischool",
+    "name": "AntiSchool",
+    "aliases": [
+      "АнтиШкола",
+      "Anti School"
+    ],
+    "categoryIds": [
+      "education"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "leroy-merlin",
+    "name": "Leroy Merlin",
+    "aliases": [
+      "Леруа Мерлен",
+      "Leroy Merlin онлайн"
+    ],
+    "categoryIds": [
+      "hardware-stores",
+      "home"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "bagland",
+    "name": "Bagland",
+    "aliases": [
+      "Бегленд",
+      "Bagland онлайн"
+    ],
+    "categoryIds": [
+      "bags",
+      "clothing"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "kachorovska",
+    "name": "Kachorovska",
+    "aliases": [
+      "Качоровська",
+      "Kachorovska онлайн"
+    ],
+    "categoryIds": [
+      "shoes"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "puma",
+    "name": "PUMA",
+    "aliases": [
+      "Пума",
+      "PUMA онлайн"
+    ],
+    "categoryIds": [
+      "clothing",
+      "sports"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "justschool",
+    "name": "JustSchool",
+    "aliases": [
+      "Just School",
+      "Джастскул"
+    ],
+    "categoryIds": [
+      "education"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "sushiya",
+    "name": "Сушия",
+    "aliases": [
+      "Sushiya",
+      "Сушія"
+    ],
+    "categoryIds": [
+      "restaurants"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "goteens",
+    "name": "GoITeens",
+    "aliases": [
+      "GoITeens",
+      "Go ITeens",
+      "ГоАйТінс"
+    ],
+    "categoryIds": [
+      "education"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "tous",
+    "name": "TOUS",
+    "aliases": [
+      "Тоус"
+    ],
+    "categoryIds": [
+      "jewelry",
+      "gifts"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "knyharnia-e",
+    "name": "Книгарня Є",
+    "aliases": [
+      "Книгарня Є онлайн",
+      "Книгарня Е",
+      "book-ye"
+    ],
+    "categoryIds": [
+      "books"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "yabluka",
+    "name": "YABLUKA",
+    "aliases": [
+      "Яблука",
+      "Yabluka онлайн"
+    ],
+    "categoryIds": [
+      "electronics",
+      "apple-tech"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "robinzon",
+    "name": "ROBINZON",
+    "aliases": [
+      "Робінзон",
+      "Robinzon онлайн"
+    ],
+    "categoryIds": [
+      "tourism",
+      "sports"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "cher17",
+    "name": "CHER'17",
+    "aliases": [
+      "CHER17",
+      "Чер17"
+    ],
+    "categoryIds": [
+      "shoes",
+      "clothing"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "ukrposhta",
+    "name": "УКРПОШТА",
+    "aliases": [
+      "Ukrposhta",
+      "Укрпошта"
+    ],
+    "categoryIds": [
+      "postal-services"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "auchan",
+    "name": "Ашан",
+    "aliases": [
+      "Auchan",
+      "Ашан онлайн",
+      "auchan.ua"
+    ],
+    "categoryIds": [
+      "products"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "polis-ua",
+    "name": "Polis.ua",
+    "aliases": [
+      "Polis",
+      "поліс юа",
+      "страхування polis"
+    ],
+    "categoryIds": [
+      "insurance-services"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "ingo-medical-center",
+    "name": "Медичний Центр Інго",
+    "aliases": [
+      "Інго",
+      "INGO",
+      "Ingo medical"
+    ],
+    "categoryIds": [
+      "medical"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "hotline-finance",
+    "name": "Hotline.finance",
+    "aliases": [
+      "Hotline finance",
+      "Хотлайн фінанс"
+    ],
+    "categoryIds": [
+      "insurance-services"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "vivat",
+    "name": "Vivat",
+    "aliases": [
+      "Віват",
+      "Vivat online"
+    ],
+    "categoryIds": [
+      "books"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "bibliotheque-de-parfum",
+    "name": "Bibliotheque de Parfum",
+    "aliases": [
+      "Bibliothèque de Parfum",
+      "Бібліотек де Парфум"
+    ],
+    "categoryIds": [
+      "beauty"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "estro",
+    "name": "Estro.ua",
+    "aliases": [
+      "Estro",
+      "Естро"
+    ],
+    "categoryIds": [
+      "shoes",
+      "clothing"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "mr-scrubber",
+    "name": "Mr. Scrubber",
+    "aliases": [
+      "Mr Scrubber",
+      "Містер Скраббер"
+    ],
+    "categoryIds": [
+      "beauty"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "lacoste",
+    "name": "Lacoste.ua",
+    "aliases": [
+      "Lacoste",
+      "Лакост"
+    ],
+    "categoryIds": [
+      "clothing"
+    ],
+    "mccCodes": [],
+    "active": true
+  }
+]

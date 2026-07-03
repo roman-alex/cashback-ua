@@ -1,0 +1,86 @@
+[
+  {
+    "id": "monobank-black",
+    "bankId": "monobank",
+    "name": "Чорна картка monobank",
+    "paymentSystems": [
+      "mastercard",
+      "visa"
+    ],
+    "supportsOwnFunds": true,
+    "supportsCreditFunds": true,
+    "active": true
+  },
+  {
+    "id": "monobank-white",
+    "bankId": "monobank",
+    "name": "Біла картка monobank",
+    "paymentSystems": [
+      "mastercard",
+      "visa"
+    ],
+    "supportsOwnFunds": true,
+    "supportsCreditFunds": false,
+    "active": true
+  },
+  {
+    "id": "pumb-vsemoju",
+    "bankId": "pumb",
+    "name": "ВСЕМОЖУ",
+    "paymentSystems": [
+      "mastercard",
+      "visa"
+    ],
+    "supportsOwnFunds": true,
+    "supportsCreditFunds": true,
+    "active": true
+  },
+  {
+    "id": "raiffeisen-card",
+    "bankId": "raiffeisen",
+    "name": "Картка Райфайзен",
+    "paymentSystems": [
+      "mastercard",
+      "visa"
+    ],
+    "supportsOwnFunds": true,
+    "supportsCreditFunds": true,
+    "active": true
+  },
+  {
+    "id": "sense-card",
+    "bankId": "sense",
+    "name": "Картка Sense",
+    "paymentSystems": [
+      "mastercard",
+      "visa"
+    ],
+    "supportsOwnFunds": true,
+    "supportsCreditFunds": true,
+    "active": true
+  },
+  {
+    "id": "kasta-card",
+    "bankId": "kasta",
+    "name": "Картка Kasta",
+    "paymentSystems": [
+      "mastercard",
+      "visa"
+    ],
+    "supportsOwnFunds": true,
+    "supportsCreditFunds": true,
+    "active": true
+  },
+  {
+    "id": "abank-card",
+    "bankId": "abank",
+    "name": "Картка А-Банк",
+    "paymentSystems": [
+      "mastercard",
+      "visa"
+    ],
+    "supportsOwnFunds": true,
+    "supportsCreditFunds": true,
+    "active": true
+  }
+]
