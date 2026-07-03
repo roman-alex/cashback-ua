@@ -1,5 +1,4 @@
 import { useState, type ReactNode } from "react";
-import { CalendarDays } from "lucide-react";
 
 import { OfferDetailsDrawer } from "@/components/OfferDetailsDrawer/OfferDetailsDrawer";
 import { ResultGroup } from "@/components/ResultGroup/ResultGroup";
@@ -28,21 +27,7 @@ export function SearchPage() {
     searchOutput !== null && searchOutput.evaluatedOffers.length > 0;
 
   return (
-    <section className="space-y-6">
-      <div className="space-y-2">
-        <p className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground">
-          <CalendarDays className="h-4 w-4" aria-hidden="true" />
-          {formatUkrainianPeriod(period)}
-        </p>
-        <h1 className="text-3xl font-semibold tracking-normal md:text-4xl">
-          Пошук кешбеків
-        </h1>
-        <p className="max-w-2xl text-base text-muted-foreground">
-          Введіть назву магазину, сервісу або категорію покупки й швидко
-          порівняйте актуальні пропозиції банків.
-        </p>
-      </div>
-
+    <section className="space-y-5">
       {currentMonthOffers.status === "missing" ? (
         <MissingCurrentMonthState
           latestArchivePeriod={currentMonthOffers.latestArchivePeriod}
@@ -50,9 +35,7 @@ export function SearchPage() {
         />
       ) : (
         <>
-          <div className="rounded-md border border-border bg-card p-4 text-card-foreground md:p-5">
-            <SearchInput onChange={setQuery} value={query} />
-          </div>
+          <SearchInput onChange={setQuery} value={query} />
 
           {hasResults && searchOutput ? (
             <div className="space-y-8">
