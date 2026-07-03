@@ -74,7 +74,7 @@ Static data lives in `src/data`:
 
 TypeScript domain types are in `src/types/cashback.ts`. Zod schemas are in `src/schemas/data.ts`.
 
-Current seed data covers monobank and ПУМБ for July 2026. ПриватБанк and Sense Bank will be added in later phases when source data is available.
+Current offer, merchant, and category data is intentionally empty. Add actual cashback data from verified screenshots or sources before release.
 
 ## Adding Data
 
@@ -118,11 +118,7 @@ Validation errors include the filename, entity ID, field, and human-readable mes
 
 ## Search
 
-The main screen searches current-month offers and groups results by practical readiness:
-
-- automatic offers that do not require manual activation;
-- offers that require category selection, registration, or another action before purchase;
-- remaining matching offers.
+The main screen searches current-month offers and shows one ranked result list. The app does not infer whether a cashback is personally activated for the user.
 
 Search supports merchant names, merchant aliases, category names, category aliases, and bank names. MCC codes stay in the data model for validation and offer details, but are not used as a user-facing search input.
 
@@ -140,7 +136,7 @@ Month rollover foundation lives in `src/lib/dates`, `src/lib/monthly-offers`, an
 
 - Data is maintained manually in JSON files.
 - No backend, database, authentication, or external bank API is used.
-- Current sample data is a small seed set, not a full cashback catalog.
+- Cashback offer data is currently empty and should be filled with verified current offers.
 - Some MCC mappings are practical starting values for search and validation and may need editorial refinement.
 - No user settings, personalized card selection, or archive UI is currently shipped.
 
@@ -148,15 +144,15 @@ Month rollover foundation lives in `src/lib/dates`, `src/lib/monthly-offers`, an
 
 Phase 1 created the application shell, strict TypeScript setup, Tailwind/shadcn foundation, and GitHub Pages deployment workflow.
 
-Phase 2 added domain types, Zod schemas, sample JSON data for monobank and ПУМБ, and the data validation script.
+Phase 2 added domain types, Zod schemas, JSON data structure, and the data validation script.
 
 Phase 3 adds local period helpers, bundled monthly offer loading, missing-current-month detection, and hooks/services for current-month UI work.
 
 Phase 4 originally added Settings UI for banks, cards, and current-month cashback activation. This UI has been removed from the current product slice to keep focus on search.
 
-Phase 5 adds reusable business logic for MiniSearch indexing, search relevance, offer evaluation, activation mode, reward calculation, result grouping, and sorting.
+Phase 5 adds reusable business logic for MiniSearch indexing, search relevance, offer evaluation, reward comparison, and sorting.
 
-Phase 6 adds the main Search page UI with a single search input, grouped results, offer cards, details drawer, and empty states.
+Phase 6 adds the main Search page UI with a single search input, ranked results, offer cards, details drawer, and empty states.
 
 Phase 7 originally added the Archive page for browsing all bundled monthly offer JSON files. This UI has been removed from the current product slice; monthly JSON files still keep period-based structure for a future archive.
 

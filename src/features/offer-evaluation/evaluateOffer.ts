@@ -18,8 +18,6 @@ export function evaluateOffer(input: EvaluationInput): EvaluatedOffer {
     offer,
     period,
   } = input;
-  const activationStatus = getActivationStatus(offer);
-  const isActivated = activationStatus === "automatic";
   const isCurrentlyValid = isOfferCurrentlyValid(offer, period, currentDate);
   const missingRequirements: string[] = [];
 
@@ -30,20 +28,10 @@ export function evaluateOffer(input: EvaluationInput): EvaluatedOffer {
   return {
     offer,
     isCurrentlyValid,
-    isActivated,
     isApplicable: missingRequirements.length === 0,
-    activationStatus,
     match,
     missingRequirements,
   };
-}
-
-function getActivationStatus(offer: CashbackOffer): EvaluatedOffer["activationStatus"] {
-  if (offer.activation.mode === "automatic") {
-    return "automatic";
-  }
-
-  return "unknown";
 }
 
 function isOfferCurrentlyValid(

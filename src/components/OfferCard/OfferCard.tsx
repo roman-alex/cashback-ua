@@ -1,96 +1,29 @@
-import { ChevronRight } from "lucide-react";
-
-import { Button } from "@/components/ui/button";
-import {
-  getBankById,
-  getCards,
-} from "@/lib/static-data/staticDataRepository";
+import { getBankById } from "@/lib/static-data/staticDataRepository";
 import type { EvaluatedOffer } from "@/types/cashback";
-import { cn } from "@/lib/utils";
 
 /* eslint-disable react-refresh/only-export-components */
 export function OfferCard({
   offer,
-  onOpenDetails,
 }: {
   offer: EvaluatedOffer;
-  onOpenDetails: () => void;
 }) {
   const bank = getBankById(offer.offer.bankId);
-  const cards = getCards().filter((card) => offer.offer.cardIds.includes(card.id));
+  const subtitle = getOfferSubtitle(offer, bank?.name ?? offer.offer.bankId);
 
   return (
-    <article className="space-y-4 rounded-md border border-border bg-card p-4 text-card-foreground">
-      <div className="flex items-start justify-between gap-3">
-        <div className="min-w-0">
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="rounded-md bg-muted px-2 py-1 text-xs font-medium text-muted-foreground">
-              {bank?.name ?? offer.offer.bankId}
-            </span>
-            <ActivationBadge status={offer.activationStatus} />
-          </div>
-          <h3 className="mt-3 text-lg font-semibold">{offer.offer.title}</h3>
-          <p className="mt-1 text-sm text-muted-foreground">
-            {cards.map((card) => card.name).join(", ")}
-          </p>
-        </div>
-        <div className="shrink-0 text-right">
-          <p className="text-xl font-semibold">{formatRewardValue(offer)}</p>
-        </div>
-      </div>
-
-      <div className="flex flex-wrap gap-2 text-xs">
-        {offer.offer.fundingSources.map((source) => (
-          <span key={source} className="rounded-md bg-muted px-2 py-1">
-            {source === "own" ? "Власні кошти" : "Кредитні кошти"}
-          </span>
-        ))}
-        {offer.offer.channels.map((channel) => (
-          <span key={channel} className="rounded-md bg-muted px-2 py-1">
-            {channel === "online" ? "Онлайн" : "Офлайн"}
-          </span>
-        ))}
-        {offer.offer.reward.maxAmount !== null ? (
-          <span className="rounded-md bg-muted px-2 py-1">
-            Ліміт {formatMoney(offer.offer.reward.maxAmount)}
-          </span>
-        ) : null}
-      </div>
-
-      <div className="flex items-center justify-between gap-3 border-t border-border pt-3">
-        <p className="text-xs text-muted-foreground">
-          Дані перевірено {formatDate(offer.offer.source.verifiedAt)}
-        </p>
-        <Button onClick={onOpenDetails} size="sm" type="button" variant="ghost">
-          Деталі
-          <ChevronRight className="h-4 w-4" aria-hidden="true" />
-        </Button>
-      </div>
+    <article className="flex w-full items-start gap-3 rounded-md border border-border bg-card px-3 py-2.5 text-card-foreground">
+      <span className="min-w-0 flex-1">
+        <span className="block break-words text-base font-semibold leading-5">
+          {offer.offer.title}
+        </span>
+        <span className="mt-0.5 block break-words text-sm leading-5 text-muted-foreground">
+          {subtitle}
+        </span>
+      </span>
+      <span className="shrink-0 pt-0.5 text-lg font-semibold leading-none">
+        {formatRewardValue(offer)}
+      </span>
     </article>
-  );
-}
-
-export function ActivationBadge({
-  status,
-}: {
-  status: EvaluatedOffer["activationStatus"];
-}) {
-  const labels = {
-    automatic: "Автоматично",
-    unknown: "Потрібно підключити",
-  };
-
-  return (
-    <span
-      className={cn(
-        "rounded-md px-2 py-1 text-xs font-medium",
-        status === "automatic"
-          ? "bg-primary/10 text-primary"
-          : "bg-secondary/20 text-secondary-foreground"
-      )}
-    >
-      {labels[status]}
-    </span>
   );
 }
 
@@ -110,10 +43,16 @@ export function formatMoney(value: number) {
   }).format(value);
 }
 
-function formatDate(date: string) {
-  return new Intl.DateTimeFormat("uk-UA", {
-    day: "2-digit",
-    month: "2-digit",
-    year: "numeric",
-  }).format(new Date(`${date}T00:00:00`));
+function getOfferSubtitle(offer: EvaluatedOffer, bankName: string) {
+  if (offer.offer.description.trim().length > 0) {
+    return offer.offer.description
+      .replace(/^Партнерський кешбек\s+\S+\s+за\s+/i, "")
+      .replace(/^Кешбек\s+\S+\s+за\s+/i, "")
+      .replace(/^Кешбек за категорію\s+/i, "Категорія ")
+      .replace(/\s+в липні 2026.*$/i, "")
+      .replace(/\s+Категорію потрібно.*$/i, "")
+      .replace(/\.$/, "");
+  }
+
+  return bankName;
 }

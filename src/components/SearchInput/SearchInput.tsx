@@ -17,7 +17,7 @@ export function SearchInput({
           aria-label="Пошук кешбеків"
           inputMode="search"
           onChange={(event) => onChange(event.target.value)}
-          placeholder="Kims, Кімс, хімчистка, продукти"
+          placeholder="Назва магазину або категорія"
           type="text"
           value={value}
         />

@@ -1,19 +1,16 @@
 import { useState, type ReactNode } from "react";
 
-import { OfferDetailsDrawer } from "@/components/OfferDetailsDrawer/OfferDetailsDrawer";
-import { ResultGroup } from "@/components/ResultGroup/ResultGroup";
+import { ResultList } from "@/components/ResultList/ResultList";
 import { SearchInput } from "@/components/SearchInput/SearchInput";
 import { evaluateSearchResults } from "@/features/offer-evaluation/evaluateSearchResults";
 import { formatUkrainianPeriod } from "@/lib/dates/period";
 import { useCurrentPeriod } from "@/hooks/useCurrentPeriod";
 import { getCurrentMonthOffers } from "@/lib/monthly-offers/monthlyOffersRepository";
-import type { EvaluatedOffer } from "@/types/cashback";
 
 export function SearchPage() {
   const period = useCurrentPeriod();
   const currentMonthOffers = getCurrentMonthOffers(period);
   const [query, setQuery] = useState("");
-  const [selectedOffer, setSelectedOffer] = useState<EvaluatedOffer | null>(null);
 
   const searchOutput =
     currentMonthOffers.status === "available"
@@ -38,40 +35,15 @@ export function SearchPage() {
           <SearchInput onChange={setQuery} value={query} />
 
           {hasResults && searchOutput ? (
-            <div className="space-y-8">
-              <ResultGroup
-                description="Автоматичні пропозиції, які не потребують ручного підключення."
-                offers={searchOutput.groups.bestMatches}
-                title="Найкращі збіги"
-                onOpenDetails={setSelectedOffer}
-              />
-              <ResultGroup
-                description="Потрібно підключити або вибрати категорію перед оплатою."
-                offers={searchOutput.groups.needsActivation}
-                title="Доступно після підключення"
-                onOpenDetails={setSelectedOffer}
-              />
-              <ResultGroup
-                collapsedByDefault
-                description="Решта збігів за поточним запитом."
-                offers={searchOutput.groups.otherOffers}
-                title="Інші пропозиції"
-                onOpenDetails={setSelectedOffer}
-              />
-            </div>
+            <ResultList offers={searchOutput.evaluatedOffers} />
           ) : (
             <EmptyState
               title="Немає збігів"
-              text="Спробуйте Kims, Кімс, Кимс, хімчистка або продукти."
+              text="Додайте актуальні кешбек-пропозиції в JSON, щоб увімкнути пошук."
             />
           )}
         </>
       )}
-
-      <OfferDetailsDrawer
-        offer={selectedOffer}
-        onClose={() => setSelectedOffer(null)}
-      />
     </section>
   );
 }

@@ -113,22 +113,10 @@ export interface OfferSearchMatch {
   score: number;
 }
 
-export type ActivationStatus =
-  | "automatic"
-  | "unknown";
-
 export interface EvaluatedOffer {
   offer: CashbackOffer;
   isCurrentlyValid: boolean;
-  isActivated: boolean;
   isApplicable: boolean;
-  activationStatus: ActivationStatus;
   match: OfferSearchMatch;
   missingRequirements: string[];
-}
-
-export interface ResultGroups {
-  bestMatches: EvaluatedOffer[];
-  needsActivation: EvaluatedOffer[];
-  otherOffers: EvaluatedOffer[];
 }
