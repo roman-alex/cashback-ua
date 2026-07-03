@@ -116,26 +116,20 @@ export interface OfferSearchMatch {
 
 export type ActivationStatus =
   | "automatic"
-  | "activated"
-  | "unknown"
-  | "not-available";
+  | "unknown";
 
 export interface EvaluatedOffer {
   offer: CashbackOffer;
-  belongsToUser: boolean;
-  ownsEligibleCard: boolean;
   isCurrentlyValid: boolean;
   isActivated: boolean;
   isApplicable: boolean;
   activationStatus: ActivationStatus;
-  expectedReward: number | null;
   match: OfferSearchMatch;
   missingRequirements: string[];
 }
 
 export interface ResultGroups {
-  bestForYou: EvaluatedOffer[];
-  availableAfterActivation: EvaluatedOffer[];
-  betterInOtherBanks: EvaluatedOffer[];
+  bestMatches: EvaluatedOffer[];
+  needsActivation: EvaluatedOffer[];
   otherOffers: EvaluatedOffer[];
 }

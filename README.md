@@ -1,8 +1,8 @@
 # Cashback UA
 
-Mobile-first PWA for comparing cashback offers from Ukrainian banks. The app will help users select their banks and cards, mark current-month cashback offers as active, search by merchant/category/MCC, and browse historical monthly offer files.
+Mobile-first PWA for quickly searching and comparing cashback offers from Ukrainian banks by merchant, category, or MCC.
 
-This repository is implemented phase by phase from `CODEX_PROJECT_PLAN.md`. Current state: Phase 8 PWA/release polish.
+This repository is implemented phase by phase from `CODEX_PROJECT_PLAN.md`. Current product focus: a fast, convenient search experience. Settings and archive screens are intentionally deferred, while the JSON data structure keeps the fields needed to support them later.
 
 ## Stack
 
@@ -45,8 +45,6 @@ npm run build
 The app uses hash routing so it works on GitHub Pages:
 
 - `/#/`
-- `/#/settings`
-- `/#/archive`
 
 ## Deployment
 
@@ -118,24 +116,25 @@ The validator checks duplicate IDs, missing bank/card/category/merchant referenc
 
 Validation errors include the filename, entity ID, field, and human-readable message.
 
+## Search
+
+The main screen searches current-month offers and groups results by practical readiness:
+
+- automatic offers that do not require manual activation;
+- offers that require category selection, registration, or another action before purchase;
+- remaining matching offers.
+
+Search supports merchant names, aliases, categories, category aliases, bank names, and MCC codes. Filters currently cover bank, funding source, payment channel, and activation mode.
+
 ## Month Rollover
 
-Month rollover foundation lives in `src/lib/dates`, `src/lib/monthly-offers`, `src/lib/storage`, and `src/hooks`.
+Month rollover foundation lives in `src/lib/dates`, `src/lib/monthly-offers`, and `src/hooks`.
 
 - `getPeriodKey(date)` uses local date methods and returns `YYYY-MM`.
 - `formatUkrainianPeriod(period)` formats a period for Ukrainian UI labels.
 - `getCurrentMonthOffers(period)` loads bundled monthly JSON files through `import.meta.glob`.
 - Missing current-month data returns an explicit `missing` result and the latest available archive period.
 - `useCurrentPeriod()` checks the month on application start, window focus, and `visibilitychange`.
-- Current-month activation preferences are reset when the stored period differs from the current local period.
-- Selected banks and cards are stored separately and are preserved across month rollover.
-
-## localStorage Keys
-
-- `cashback:user-preferences`
-- `cashback:current-month-preferences`
-
-UI components should use repositories/hooks instead of touching `localStorage` directly. Stored values are validated with Zod, and corrupted storage falls back to safe defaults instead of crashing the app.
 
 ## MVP Limitations
 
@@ -143,21 +142,22 @@ UI components should use repositories/hooks instead of touching `localStorage` d
 - No backend, database, authentication, or external bank API is used.
 - Current sample data is a small seed set, not a full cashback catalog.
 - Some MCC mappings are practical starting values for search and validation and may need editorial refinement.
+- No user settings, personalized card selection, or archive UI is currently shipped.
 
 ## Phase Notes
 
-Phase 1 created the application shell, responsive navigation, strict TypeScript setup, Tailwind/shadcn foundation, and GitHub Pages deployment workflow.
+Phase 1 created the application shell, strict TypeScript setup, Tailwind/shadcn foundation, and GitHub Pages deployment workflow.
 
 Phase 2 added domain types, Zod schemas, sample JSON data for monobank and ПУМБ, and the data validation script.
 
-Phase 3 adds local period helpers, bundled monthly offer loading, missing-current-month detection, typed storage repositories, Zod validation for stored values, and hooks/services for future UI work. Search, PWA behavior, and final UI workflows are intentionally left for later phases.
+Phase 3 adds local period helpers, bundled monthly offer loading, missing-current-month detection, and hooks/services for current-month UI work.
 
-Phase 4 adds the Settings UI for banks, cards, and current-month cashback activation.
+Phase 4 originally added Settings UI for banks, cards, and current-month cashback activation. This UI has been removed from the current product slice to keep focus on search.
 
-Phase 5 adds reusable business logic for MiniSearch indexing, search relevance, offer evaluation, activation status, reward calculation, result grouping, and sorting. The final Search page UI is intentionally left for Phase 6.
+Phase 5 adds reusable business logic for MiniSearch indexing, search relevance, offer evaluation, activation mode, reward calculation, result grouping, and sorting.
 
-Phase 6 adds the main Search page UI with search input, purchase amount, filters, grouped results, offer cards, details drawer, and empty states.
+Phase 6 adds the main Search page UI with search input, filters, grouped results, offer cards, details drawer, and empty states.
 
-Phase 7 adds the Archive page for browsing all bundled monthly offer JSON files with period, bank, category, merchant, offer type, activation mode, funding source, and channel filters. Archive browsing does not use historical user activation settings.
+Phase 7 originally added the Archive page for browsing all bundled monthly offer JSON files. This UI has been removed from the current product slice; monthly JSON files still keep period-based structure for a future archive.
 
 Phase 8 adds PWA installability, local icons, cached static assets, offline app shell support, and the deployment update prompt.

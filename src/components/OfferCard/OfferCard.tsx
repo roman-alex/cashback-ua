@@ -36,11 +36,6 @@ export function OfferCard({
         </div>
         <div className="shrink-0 text-right">
           <p className="text-xl font-semibold">{formatRewardValue(offer)}</p>
-          {offer.expectedReward !== null ? (
-            <p className="text-sm text-primary">
-              {formatMoney(offer.expectedReward)}
-            </p>
-          ) : null}
         </div>
       </div>
 
@@ -82,16 +77,14 @@ export function ActivationBadge({
 }) {
   const labels = {
     automatic: "Автоматично",
-    activated: "Підключено",
     unknown: "Потрібно підключити",
-    "not-available": "Недоступно",
   };
 
   return (
     <span
       className={cn(
         "rounded-md px-2 py-1 text-xs font-medium",
-        status === "automatic" || status === "activated"
+        status === "automatic"
           ? "bg-primary/10 text-primary"
           : "bg-secondary/20 text-secondary-foreground"
       )}

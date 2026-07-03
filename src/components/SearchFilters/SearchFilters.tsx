@@ -1,23 +1,19 @@
-import { Check, CreditCard } from "lucide-react";
-
 import { Button } from "@/components/ui/button";
-import type { Card, FundingSource, PaymentChannel } from "@/types/cashback";
-import { cn } from "@/lib/utils";
+import type { Bank, FundingSource, PaymentChannel } from "@/types/cashback";
 
 export interface SearchFilterState {
-  bankScope: "my" | "all";
-  selectedCardIds: string[];
+  bankId: "all" | string;
   fundingSource: "all" | FundingSource;
   channel: "all" | PaymentChannel;
-  activation: "all" | "ready-to-use" | "requires-activation";
+  activation: "all" | "automatic" | "requires-action";
 }
 
 export function SearchFilters({
-  cards,
+  banks,
   filters,
   onChange,
 }: {
-  cards: Card[];
+  banks: Bank[];
   filters: SearchFilterState;
   onChange: (filters: SearchFilterState) => void;
 }) {
@@ -25,63 +21,21 @@ export function SearchFilters({
     onChange({ ...filters, ...patchValue });
   }
 
-  function toggleCard(cardId: string) {
-    const nextCardIds = filters.selectedCardIds.includes(cardId)
-      ? filters.selectedCardIds.filter((id) => id !== cardId)
-      : [...filters.selectedCardIds, cardId];
-
-    patch({ selectedCardIds: nextCardIds });
-  }
-
   return (
     <div className="space-y-4">
-      <SegmentedControl
-        label="Банки"
-        options={[
-          { label: "Мої банки", value: "my" },
-          { label: "Усі банки", value: "all" },
-        ]}
-        value={filters.bankScope}
-        onChange={(value) => patch({ bankScope: value })}
-      />
-
-      <div className="space-y-2">
-        <p className="text-sm font-medium text-muted-foreground">Картки</p>
-        {cards.length === 0 ? (
-          <p className="rounded-md border border-dashed border-border p-3 text-sm text-muted-foreground">
-            Виберіть картки в налаштуваннях.
-          </p>
-        ) : (
-          <div className="flex flex-wrap gap-2">
-            {cards.map((card) => {
-              const checked = filters.selectedCardIds.includes(card.id);
-
-              return (
-                <button
-                  key={card.id}
-                  className={cn(
-                    "inline-flex min-h-10 items-center gap-2 rounded-md border border-border px-3 py-2 text-sm transition-colors",
-                    checked
-                      ? "border-primary bg-primary text-primary-foreground"
-                      : "bg-background text-foreground hover:bg-accent"
-                  )}
-                  onClick={() => toggleCard(card.id)}
-                  type="button"
-                >
-                  {checked ? (
-                    <Check className="h-4 w-4" aria-hidden="true" />
-                  ) : (
-                    <CreditCard className="h-4 w-4" aria-hidden="true" />
-                  )}
-                  {card.name}
-                </button>
-              );
-            })}
-          </div>
-        )}
-      </div>
-
-      <div className="grid gap-4 md:grid-cols-3">
+      <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+        <SegmentedControl
+          label="Банк"
+          options={[
+            { label: "Усі", value: "all" },
+            ...banks.map((bank) => ({
+              label: bank.name,
+              value: bank.id,
+            })),
+          ]}
+          value={filters.bankId}
+          onChange={(value) => patch({ bankId: value })}
+        />
         <SegmentedControl
           label="Кошти"
           options={[
@@ -103,11 +57,11 @@ export function SearchFilters({
           onChange={(value) => patch({ channel: value })}
         />
         <SegmentedControl
-          label="Статус"
+          label="Підключення"
           options={[
             { label: "Усі", value: "all" },
-            { label: "Готові", value: "ready-to-use" },
-            { label: "Підключити", value: "requires-activation" },
+            { label: "Авто", value: "automatic" },
+            { label: "Потрібна дія", value: "requires-action" },
           ]}
           value={filters.activation}
           onChange={(value) => patch({ activation: value })}

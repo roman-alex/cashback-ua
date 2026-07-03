@@ -34,9 +34,8 @@ export interface OfferSearchResult {
 }
 
 export interface SearchFilters {
-  bankScope: "my" | "all";
-  selectedCardIds: string[];
+  bankId: "all" | string;
   fundingSource: "all" | FundingSource;
   channel: "all" | PaymentChannel;
-  activation: "all" | "ready-to-use" | "requires-activation";
+  activation: "all" | "automatic" | "requires-action";
 }

@@ -7,22 +7,15 @@ import type {
   PaymentChannel,
   ResultGroups,
 } from "@/types/cashback";
-import type {
-  CurrentMonthPreferences,
-  UserPreferences,
-} from "@/types/preferences";
 
 export interface EvaluateSearchInput {
   offers: Parameters<typeof searchOffers>[0];
   query: string;
   period: string;
-  userPreferences: UserPreferences;
-  currentMonthPreferences: CurrentMonthPreferences;
-  purchaseAmount: number | null;
-  bankScope: "my" | "all";
+  bankId: "all" | string;
   fundingSource: "all" | FundingSource;
   channel: "all" | PaymentChannel;
-  activation: "all" | "ready-to-use" | "requires-activation";
+  activation: "all" | "automatic" | "requires-action";
   currentDate?: Date;
 }
 
@@ -41,42 +34,17 @@ export function evaluateSearchResults(
         offer: result.offer,
         match: result.match,
         period: input.period,
-        userPreferences: input.userPreferences,
-        currentMonthPreferences: input.currentMonthPreferences,
-        purchaseAmount: input.purchaseAmount,
-        bankScope: input.bankScope,
+        bankId: input.bankId,
         fundingSource: input.fundingSource,
         channel: input.channel,
+        activation: input.activation,
         currentDate: input.currentDate,
       })
     )
-    .filter((offer) => matchesBankScope(offer, input.bankScope))
-    .filter((offer) => matchesActivationFilter(offer, input.activation));
+    .filter((offer) => offer.isApplicable);
 
   return {
     evaluatedOffers,
     groups: groupEvaluatedOffers(evaluatedOffers),
   };
-}
-
-function matchesBankScope(
-  offer: EvaluatedOffer,
-  bankScope: EvaluateSearchInput["bankScope"]
-) {
-  return bankScope === "all" || offer.belongsToUser;
-}
-
-function matchesActivationFilter(
-  offer: EvaluatedOffer,
-  activation: EvaluateSearchInput["activation"]
-) {
-  if (activation === "ready-to-use") {
-    return offer.isActivated;
-  }
-
-  if (activation === "requires-activation") {
-    return !offer.isActivated && offer.activationStatus !== "not-available";
-  }
-
-  return true;
 }

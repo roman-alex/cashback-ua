@@ -61,11 +61,6 @@ export function OfferDetailsDrawer({
           <span className="rounded-md bg-muted px-2 py-1 text-xs font-medium">
             {formatRewardValue(offer)}
           </span>
-          {offer.expectedReward !== null ? (
-            <span className="rounded-md bg-primary/10 px-2 py-1 text-xs font-medium text-primary">
-              Очікувано {formatMoney(offer.expectedReward)}
-            </span>
-          ) : null}
         </div>
 
         <div className="mt-6 space-y-5 text-sm">
