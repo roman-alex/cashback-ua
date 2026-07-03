@@ -5,7 +5,7 @@ import {
   getCategories,
   getMerchants,
 } from "@/lib/static-data/staticDataRepository";
-import { normalizeSearchText, isExactMccQuery } from "@/lib/search/normalize";
+import { normalizeSearchText } from "@/lib/search/normalize";
 import type { CashbackOffer, OfferSearchMatch } from "@/types/cashback";
 
 import type { OfferSearchResult, SearchableOffer, SearchDocument } from "./types";
@@ -32,17 +32,6 @@ export function buildSearchableOffers(
     const categoryAliases = offerCategories.flatMap(
       (category) => category.aliases
     );
-    const categoryMccCodes = offerCategories.flatMap(
-      (category) => category.mccCodes
-    );
-    const merchantMccCodes = offerMerchants.flatMap(
-      (merchant) => merchant.mccCodes
-    );
-    const mccCodes = uniqueValues([
-      ...offer.mccCodes,
-      ...merchantMccCodes,
-      ...categoryMccCodes,
-    ]);
     const document: SearchDocument = {
       id: offer.id,
       offerId: offer.id,
@@ -52,7 +41,6 @@ export function buildSearchableOffers(
       merchantAliases: normalizeSearchText(merchantAliases.join(" ")),
       categoryNames: normalizeSearchText(categoryNames.join(" ")),
       categoryAliases: normalizeSearchText(categoryAliases.join(" ")),
-      mccCodes: mccCodes.join(" "),
       text: normalizeSearchText(
         [
           offer.title,
@@ -61,7 +49,6 @@ export function buildSearchableOffers(
           ...merchantAliases,
           ...categoryNames,
           ...categoryAliases,
-          ...mccCodes,
         ].join(" ")
       ),
     };
@@ -73,7 +60,6 @@ export function buildSearchableOffers(
       merchantAliases,
       categoryNames,
       categoryAliases,
-      mccCodes,
     };
   });
 }
@@ -113,13 +99,11 @@ export function searchOffers(
       "merchantAliases",
       "categoryNames",
       "categoryAliases",
-      "mccCodes",
       "text",
     ],
     storeFields: ["offerId"],
     searchOptions: {
       boost: {
-        mccCodes: 5,
         merchantNames: 4,
         merchantAliases: 3,
         categoryNames: 2,
@@ -177,10 +161,6 @@ function getExactMatch(
     return { type: "merchant-alias", score: 90 };
   }
 
-  if (isExactMccQuery(normalizedQuery) && searchableOffer.mccCodes.includes(normalizedQuery)) {
-    return { type: "exact-mcc", score: 80 };
-  }
-
   if (containsExactValue(searchableOffer.categoryNames, normalizedQuery)) {
     return { type: "category", score: 70 };
   }
@@ -194,8 +174,4 @@ function getExactMatch(
 
 function containsExactValue(values: string[], normalizedQuery: string) {
   return values.some((value) => normalizeSearchText(value) === normalizedQuery);
-}
-
-function uniqueValues(values: string[]) {
-  return [...new Set(values)];
 }

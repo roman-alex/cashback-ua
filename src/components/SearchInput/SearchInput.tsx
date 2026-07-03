@@ -16,7 +16,7 @@ export function SearchInput({
           className="min-w-0 flex-1 bg-transparent text-base outline-none placeholder:text-muted-foreground"
           inputMode="search"
           onChange={(event) => onChange(event.target.value)}
-          placeholder="Kims, Кімс, хімчистка, 5411"
+          placeholder="Kims, Кімс, хімчистка, продукти"
           type="search"
           value={value}
         />

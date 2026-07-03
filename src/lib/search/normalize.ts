@@ -5,7 +5,3 @@ export function normalizeSearchText(value: string): string {
     .replace(/\s+/g, " ")
     .trim();
 }
-
-export function isExactMccQuery(value: string): boolean {
-  return /^\d{4}$/.test(normalizeSearchText(value));
-}

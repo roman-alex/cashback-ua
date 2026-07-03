@@ -104,7 +104,6 @@ export interface MonthlyOffersData {
 export type SearchMatchType =
   | "exact-merchant"
   | "merchant-alias"
-  | "exact-mcc"
   | "category"
   | "category-alias"
   | "text";

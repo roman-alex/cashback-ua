@@ -1,6 +1,6 @@
 # Cashback UA
 
-Mobile-first PWA for quickly searching and comparing cashback offers from Ukrainian banks by merchant, category, or MCC.
+Mobile-first PWA for quickly searching and comparing cashback offers from Ukrainian banks by merchant, service, or category words.
 
 This repository is implemented phase by phase from `CODEX_PROJECT_PLAN.md`. Current product focus: a fast, convenient search experience. Settings and archive screens are intentionally deferred, while the JSON data structure keeps the fields needed to support them later.
 
@@ -124,7 +124,7 @@ The main screen searches current-month offers and groups results by practical re
 - offers that require category selection, registration, or another action before purchase;
 - remaining matching offers.
 
-Search supports merchant names, aliases, categories, category aliases, bank names, and MCC codes. Filters currently cover bank, funding source, payment channel, and activation mode.
+Search supports merchant names, merchant aliases, category names, category aliases, and bank names. MCC codes stay in the data model for validation and offer details, but are not used as a user-facing search input.
 
 ## Month Rollover
 
@@ -156,7 +156,7 @@ Phase 4 originally added Settings UI for banks, cards, and current-month cashbac
 
 Phase 5 adds reusable business logic for MiniSearch indexing, search relevance, offer evaluation, activation mode, reward calculation, result grouping, and sorting.
 
-Phase 6 adds the main Search page UI with search input, filters, grouped results, offer cards, details drawer, and empty states.
+Phase 6 adds the main Search page UI with a single search input, grouped results, offer cards, details drawer, and empty states.
 
 Phase 7 originally added the Archive page for browsing all bundled monthly offer JSON files. This UI has been removed from the current product slice; monthly JSON files still keep period-based structure for a future archive.
 

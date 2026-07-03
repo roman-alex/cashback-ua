@@ -3,27 +3,18 @@ import { CalendarDays } from "lucide-react";
 
 import { OfferDetailsDrawer } from "@/components/OfferDetailsDrawer/OfferDetailsDrawer";
 import { ResultGroup } from "@/components/ResultGroup/ResultGroup";
-import { SearchFilters, type SearchFilterState } from "@/components/SearchFilters/SearchFilters";
 import { SearchInput } from "@/components/SearchInput/SearchInput";
 import { evaluateSearchResults } from "@/features/offer-evaluation/evaluateSearchResults";
 import { formatUkrainianPeriod } from "@/lib/dates/period";
 import { useCurrentPeriod } from "@/hooks/useCurrentPeriod";
 import { getCurrentMonthOffers } from "@/lib/monthly-offers/monthlyOffersRepository";
-import { getBanks } from "@/lib/static-data/staticDataRepository";
 import type { EvaluatedOffer } from "@/types/cashback";
 
 export function SearchPage() {
   const period = useCurrentPeriod();
   const currentMonthOffers = getCurrentMonthOffers(period);
-  const banks = getBanks().filter((bank) => bank.active);
   const [query, setQuery] = useState("");
   const [selectedOffer, setSelectedOffer] = useState<EvaluatedOffer | null>(null);
-  const [filters, setFilters] = useState<SearchFilterState>({
-    bankId: "all",
-    fundingSource: "all",
-    channel: "all",
-    activation: "all",
-  });
 
   const searchOutput =
     currentMonthOffers.status === "available"
@@ -31,10 +22,6 @@ export function SearchPage() {
           offers: currentMonthOffers.data.offers,
           query,
           period,
-          bankId: filters.bankId,
-          fundingSource: filters.fundingSource,
-          channel: filters.channel,
-          activation: filters.activation,
         })
       : null;
   const hasResults =
@@ -51,8 +38,8 @@ export function SearchPage() {
           Пошук кешбеків
         </h1>
         <p className="max-w-2xl text-base text-muted-foreground">
-          Знайдіть мерчанта, категорію або MCC і швидко порівняйте актуальні
-          пропозиції банків.
+          Введіть назву магазину, сервісу або категорію покупки й швидко
+          порівняйте актуальні пропозиції банків.
         </p>
       </div>
 
@@ -63,13 +50,8 @@ export function SearchPage() {
         />
       ) : (
         <>
-          <div className="space-y-4 rounded-md border border-border bg-card p-4 text-card-foreground md:p-5">
+          <div className="rounded-md border border-border bg-card p-4 text-card-foreground md:p-5">
             <SearchInput onChange={setQuery} value={query} />
-            <SearchFilters
-              banks={banks}
-              filters={filters}
-              onChange={setFilters}
-            />
           </div>
 
           {hasResults && searchOutput ? (
@@ -88,7 +70,7 @@ export function SearchPage() {
               />
               <ResultGroup
                 collapsedByDefault
-                description="Решта збігів за поточним запитом і фільтрами."
+                description="Решта збігів за поточним запитом."
                 offers={searchOutput.groups.otherOffers}
                 title="Інші пропозиції"
                 onOpenDetails={setSelectedOffer}
@@ -97,7 +79,7 @@ export function SearchPage() {
           ) : (
             <EmptyState
               title="Немає збігів"
-              text="Спробуйте Kims, Кімс, Кимс, хімчистка, продукти або 5411."
+              text="Спробуйте Kims, Кімс, Кимс, хімчистка або продукти."
             />
           )}
         </>
