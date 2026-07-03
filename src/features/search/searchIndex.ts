@@ -74,13 +74,7 @@ export function searchOffers(
   const searchableOffers = buildSearchableOffers(offers, staticData);
 
   if (normalizedQuery.length === 0) {
-    return searchableOffers.map((searchableOffer) => ({
-      offer: searchableOffer.offer,
-      match: {
-        type: "text",
-        score: 1,
-      },
-    }));
+    return [];
   }
 
   const exactMatches = new Map<string, OfferSearchMatch>();

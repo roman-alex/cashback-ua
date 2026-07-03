@@ -3,6 +3,7 @@ import { useState, type ReactNode } from "react";
 import { ResultList } from "@/components/ResultList/ResultList";
 import { SearchInput } from "@/components/SearchInput/SearchInput";
 import { evaluateSearchResults } from "@/features/offer-evaluation/evaluateSearchResults";
+import { getDefaultCategoryOffers } from "@/features/offer-evaluation/getDefaultCategoryOffers";
 import { formatUkrainianPeriod } from "@/lib/dates/period";
 import { useCashbackData } from "@/hooks/useCashbackData";
 import { useCurrentPeriod } from "@/hooks/useCurrentPeriod";
@@ -11,18 +12,23 @@ export function SearchPage() {
   const period = useCurrentPeriod();
   const cashbackData = useCashbackData(period);
   const [query, setQuery] = useState("");
+  const isDefaultMode = query.trim().length === 0;
 
-  const searchOutput =
+  const visibleOffers =
     cashbackData.status === "available"
-      ? evaluateSearchResults({
-          offers: cashbackData.currentMonthOffers.data.offers,
-          staticData: cashbackData.staticData,
-          query,
-          period,
-        })
-      : null;
-  const hasResults =
-    searchOutput !== null && searchOutput.evaluatedOffers.length > 0;
+      ? isDefaultMode
+        ? getDefaultCategoryOffers({
+            offers: cashbackData.currentMonthOffers.data.offers,
+            period,
+          })
+        : evaluateSearchResults({
+            offers: cashbackData.currentMonthOffers.data.offers,
+            staticData: cashbackData.staticData,
+            query,
+            period,
+          }).evaluatedOffers
+      : [];
+  const hasResults = visibleOffers.length > 0;
 
   return (
     <section className="space-y-5">
@@ -47,15 +53,20 @@ export function SearchPage() {
         <>
           <SearchInput onChange={setQuery} value={query} />
 
-          {hasResults && searchOutput ? (
+          {hasResults ? (
             <ResultList
-              offers={searchOutput.evaluatedOffers}
+              offers={visibleOffers}
               staticData={cashbackData.staticData}
+              title={isDefaultMode ? "Найкращі категорії" : "Знайдено"}
             />
           ) : (
             <EmptyState
-              title="Немає збігів"
-              text="Спробуйте іншу назву магазину, сервісу або категорії."
+              title={isDefaultMode ? "Немає категорій" : "Немає збігів"}
+              text={
+                isDefaultMode
+                  ? "Додайте банківські категорії поточного місяця, щоб показати стартовий список."
+                  : "Спробуйте іншу назву магазину, сервісу або категорії."
+              }
             />
           )}
         </>
