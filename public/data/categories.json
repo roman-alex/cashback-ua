@@ -690,5 +690,16 @@
       "insurance"
     ],
     "mccCodes": []
+  },
+  {
+    "id": "gaming",
+    "name": "Геймінг",
+    "aliases": [
+      "геймінг",
+      "ігри",
+      "gaming",
+      "game"
+    ],
+    "mccCodes": []
   }
 ]

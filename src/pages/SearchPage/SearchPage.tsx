@@ -50,8 +50,13 @@ export function SearchPage() {
           period={period}
         />
       ) : (
-        <>
+        <div className="space-y-5">
+          <div className="space-y-2">
+          <h1 className="px-0.5 text-2xl font-semibold leading-8">
+            Кешбек та знижки
+          </h1>
           <SearchInput onChange={setQuery} value={query} />
+          </div>
 
           {hasResults ? (
             <ResultList
@@ -69,7 +74,7 @@ export function SearchPage() {
               }
             />
           )}
-        </>
+        </div>
       )}
     </section>
   );

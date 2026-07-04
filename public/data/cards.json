@@ -82,5 +82,17 @@
     "supportsOwnFunds": true,
     "supportsCreditFunds": true,
     "active": true
+  },
+  {
+    "id": "privatbank-card",
+    "bankId": "privatbank",
+    "name": "Картка PrivatBank",
+    "paymentSystems": [
+      "mastercard",
+      "visa"
+    ],
+    "supportsOwnFunds": true,
+    "supportsCreditFunds": true,
+    "active": true
   }
 ]

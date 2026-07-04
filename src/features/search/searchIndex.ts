@@ -185,6 +185,8 @@ function getBankSearchAliases(bankId: string): string[] {
       return ["mono", "моно", "монобанк"];
     case "pumb":
       return ["пумб", "pumb"];
+    case "privatbank":
+      return ["приват", "приватбанк", "privat", "privatbank"];
     case "raiffeisen":
       return ["райф", "райфайзен", "raif", "raiffeisen"];
     case "sense":

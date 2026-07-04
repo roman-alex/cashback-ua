@@ -16,6 +16,7 @@ export default defineConfig({
         "icons/pwa-512.png",
         "logos/abank.svg",
         "logos/monobank.svg",
+        "logos/privatbank.svg",
         "logos/pumb.svg",
         "logos/kasta.svg",
         "logos/raiffeisen.svg",

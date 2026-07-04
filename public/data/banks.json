@@ -40,5 +40,12 @@
     "slug": "abank",
     "logo": "/logos/abank.svg",
     "active": true
+  },
+  {
+    "id": "privatbank",
+    "name": "PrivatBank",
+    "slug": "privatbank",
+    "logo": "/logos/privatbank.svg",
+    "active": true
   }
 ]

@@ -1,6 +1,6 @@
 {
   "period": "2026-07",
-  "updatedAt": "2026-07-03T23:50:00+03:00",
+  "updatedAt": "2026-07-04T09:05:00+03:00",
   "offers": [
     {
       "id": "pumb-2026-07-bank-wine-markets",
@@ -163,16 +163,16 @@
     },
     {
       "id": "pumb-2026-07-bank-avrora",
-      "offerKey": "pumb-bank-avrora",
+      "offerKey": "pumb-bank-multimarkets",
       "bankId": "pumb",
       "cardIds": [
         "pumb-vsemoju"
       ],
       "type": "category",
-      "title": "Аврора",
+      "title": "Аврора та інші мультимаркети",
       "description": "3% кредитні, 2% власні.",
       "categoryIds": [
-        "products"
+        "multimarkets"
       ],
       "merchantIds": [
         "avrora"
@@ -14519,6 +14519,825 @@
         "verifiedAt": "2026-07-03"
       },
       "status": "active"
+    },
+    {
+      "bankId": "privatbank",
+      "cardIds": [
+        "privatbank-card"
+      ],
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online",
+        "offline"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Активуйте пропозицію в застосунку PrivatBank.",
+        "actionUrl": "https://privatbank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Дані зі скріну сервісів PrivatBank."
+        ]
+      },
+      "validFrom": "2026-07-01",
+      "validTo": "2026-07-31",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-07-04"
+      },
+      "status": "active",
+      "id": "privatbank-2026-07-partner-wog",
+      "offerKey": "privatbank-partner-wog",
+      "type": "partner",
+      "title": "WOG",
+      "description": "3% кешбек за оплати карткою PrivatBank на сервісах WOG.",
+      "categoryIds": [
+        "fuel"
+      ],
+      "merchantIds": [
+        "wog"
+      ],
+      "mccCodes": [],
+      "reward": {
+        "type": "percent",
+        "value": 3,
+        "maxAmount": null,
+        "currency": "UAH"
+      }
+    },
+    {
+      "bankId": "privatbank",
+      "cardIds": [
+        "privatbank-card"
+      ],
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online",
+        "offline"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Активуйте пропозицію в застосунку PrivatBank.",
+        "actionUrl": "https://privatbank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": true,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Дані зі скріну сервісів PrivatBank."
+        ]
+      },
+      "validFrom": "2026-07-01",
+      "validTo": "2026-07-31",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-07-04"
+      },
+      "status": "active",
+      "id": "privatbank-2026-07-partner-loko",
+      "offerKey": "privatbank-partner-loko",
+      "type": "partner",
+      "title": "LOKO",
+      "description": "15% кешбек за першу купівлю в застосунку LOKO.",
+      "categoryIds": [
+        "restaurants"
+      ],
+      "merchantIds": [
+        "loko"
+      ],
+      "mccCodes": [],
+      "reward": {
+        "type": "percent",
+        "value": 15,
+        "maxAmount": null,
+        "currency": "UAH"
+      }
+    },
+    {
+      "bankId": "privatbank",
+      "cardIds": [
+        "privatbank-card"
+      ],
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online",
+        "offline"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Активуйте пропозицію в застосунку PrivatBank.",
+        "actionUrl": "https://privatbank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Дані зі скріну сервісів PrivatBank."
+        ]
+      },
+      "validFrom": "2026-07-01",
+      "validTo": "2026-07-31",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-07-04"
+      },
+      "status": "active",
+      "id": "privatbank-2026-07-partner-samsung-experience-store",
+      "offerKey": "privatbank-partner-samsung-experience-store",
+      "type": "partner",
+      "title": "Samsung Experience Store",
+      "description": "3% кешбек за оплати картками PrivatBank у мережі Samsung Experience Store.",
+      "categoryIds": [
+        "electronics"
+      ],
+      "merchantIds": [
+        "samsung-experience-store"
+      ],
+      "mccCodes": [],
+      "reward": {
+        "type": "percent",
+        "value": 3,
+        "maxAmount": null,
+        "currency": "UAH"
+      }
+    },
+    {
+      "bankId": "privatbank",
+      "cardIds": [
+        "privatbank-card"
+      ],
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online",
+        "offline"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Активуйте пропозицію в застосунку PrivatBank.",
+        "actionUrl": "https://privatbank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Дані зі скріну сервісів PrivatBank."
+        ]
+      },
+      "validFrom": "2026-07-01",
+      "validTo": "2026-07-31",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-07-04"
+      },
+      "status": "active",
+      "id": "privatbank-2026-07-partner-kibernetyky",
+      "offerKey": "privatbank-partner-kibernetyky",
+      "type": "partner",
+      "title": "Кібернетики",
+      "description": "8% кешбеку за оплати картками PrivatBank в інтернет-магазині Кібернетики.",
+      "categoryIds": [
+        "electronics"
+      ],
+      "merchantIds": [
+        "kibernetyky"
+      ],
+      "mccCodes": [],
+      "reward": {
+        "type": "percent",
+        "value": 8,
+        "maxAmount": null,
+        "currency": "UAH"
+      }
+    },
+    {
+      "bankId": "privatbank",
+      "cardIds": [
+        "privatbank-card"
+      ],
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online",
+        "offline"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Активуйте пропозицію в застосунку PrivatBank.",
+        "actionUrl": "https://privatbank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Дані зі скріну сервісів PrivatBank."
+        ]
+      },
+      "validFrom": "2026-07-01",
+      "validTo": "2026-07-31",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-07-04"
+      },
+      "status": "active",
+      "id": "privatbank-2026-07-partner-ukrarmor",
+      "offerKey": "privatbank-partner-ukrarmor",
+      "type": "partner",
+      "title": "Ukrarmor",
+      "description": "До 7% кешбеку за купівлі в інтернет-магазині та мережі Ukrarmor.",
+      "categoryIds": [
+        "clothing"
+      ],
+      "merchantIds": [
+        "ukrarmor"
+      ],
+      "mccCodes": [],
+      "reward": {
+        "type": "percent",
+        "value": 7,
+        "maxAmount": null,
+        "currency": "UAH"
+      }
+    },
+    {
+      "bankId": "privatbank",
+      "cardIds": [
+        "privatbank-card"
+      ],
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online",
+        "offline"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Активуйте пропозицію в застосунку PrivatBank.",
+        "actionUrl": "https://privatbank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Дані зі скріну сервісів PrivatBank."
+        ]
+      },
+      "validFrom": "2026-07-01",
+      "validTo": "2026-07-31",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-07-04"
+      },
+      "status": "active",
+      "id": "privatbank-2026-07-partner-foxtrot",
+      "offerKey": "privatbank-partner-foxtrot",
+      "type": "partner",
+      "title": "Фокстрот",
+      "description": "5% кешбеку за оплати в мережі Фокстрот.",
+      "categoryIds": [
+        "electronics"
+      ],
+      "merchantIds": [
+        "foxtrot"
+      ],
+      "mccCodes": [],
+      "reward": {
+        "type": "percent",
+        "value": 5,
+        "maxAmount": null,
+        "currency": "UAH"
+      }
+    },
+    {
+      "bankId": "privatbank",
+      "cardIds": [
+        "privatbank-card"
+      ],
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online",
+        "offline"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Активуйте пропозицію в застосунку PrivatBank.",
+        "actionUrl": "https://privatbank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Дані зі скріну сервісів PrivatBank."
+        ]
+      },
+      "validFrom": "2026-07-01",
+      "validTo": "2026-07-31",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-07-04"
+      },
+      "status": "active",
+      "id": "privatbank-2026-07-partner-moyo",
+      "offerKey": "privatbank-partner-moyo",
+      "type": "partner",
+      "title": "MOYO",
+      "description": "5% кешбеку за купівлі в мережі, застосунку та на сайті MOYO.",
+      "categoryIds": [
+        "electronics"
+      ],
+      "merchantIds": [
+        "moyo"
+      ],
+      "mccCodes": [],
+      "reward": {
+        "type": "percent",
+        "value": 5,
+        "maxAmount": null,
+        "currency": "UAH"
+      }
+    },
+    {
+      "bankId": "privatbank",
+      "cardIds": [
+        "privatbank-card"
+      ],
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online",
+        "offline"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Активуйте пропозицію в застосунку PrivatBank.",
+        "actionUrl": "https://privatbank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Дані зі скріну сервісів PrivatBank."
+        ]
+      },
+      "validFrom": "2026-07-01",
+      "validTo": "2026-07-31",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-07-04"
+      },
+      "status": "active",
+      "id": "privatbank-2026-07-partner-bolt",
+      "offerKey": "privatbank-partner-bolt",
+      "type": "partner",
+      "title": "Bolt та Bolt Food",
+      "description": "20% знижки на поїздки з Bolt та доставку Bolt Food.",
+      "categoryIds": [
+        "taxi",
+        "restaurants"
+      ],
+      "merchantIds": [
+        "bolt"
+      ],
+      "mccCodes": [],
+      "reward": {
+        "type": "percent",
+        "value": 20,
+        "maxAmount": null,
+        "currency": "UAH"
+      }
+    },
+    {
+      "bankId": "privatbank",
+      "cardIds": [
+        "privatbank-card"
+      ],
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online",
+        "offline"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Активуйте пропозицію в застосунку PrivatBank.",
+        "actionUrl": "https://privatbank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Дані зі скріну сервісів PrivatBank."
+        ]
+      },
+      "validFrom": "2026-07-01",
+      "validTo": "2026-07-31",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-07-04"
+      },
+      "status": "active",
+      "id": "privatbank-2026-07-bank-gaming",
+      "offerKey": "privatbank-bank-gaming",
+      "type": "category",
+      "title": "Геймінг",
+      "description": "До 15% кешбеку у категорії Геймінг.",
+      "categoryIds": [
+        "gaming"
+      ],
+      "merchantIds": [],
+      "mccCodes": [],
+      "reward": {
+        "type": "percent",
+        "value": 15,
+        "maxAmount": null,
+        "currency": "UAH"
+      }
+    },
+    {
+      "bankId": "privatbank",
+      "cardIds": [
+        "privatbank-card"
+      ],
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online",
+        "offline"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Активуйте пропозицію в застосунку PrivatBank.",
+        "actionUrl": "https://privatbank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Дані зі скріну сервісів PrivatBank."
+        ]
+      },
+      "validFrom": "2026-07-01",
+      "validTo": "2026-07-31",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-07-04"
+      },
+      "status": "active",
+      "id": "privatbank-2026-07-partner-navi-shop",
+      "offerKey": "privatbank-partner-navi-shop",
+      "type": "partner",
+      "title": "NAVI Shop",
+      "description": "30% знижки на купівлі в NAVI Shop.",
+      "categoryIds": [
+        "gaming",
+        "clothing"
+      ],
+      "merchantIds": [
+        "navi-shop"
+      ],
+      "mccCodes": [],
+      "reward": {
+        "type": "percent",
+        "value": 30,
+        "maxAmount": null,
+        "currency": "UAH"
+      }
+    },
+    {
+      "bankId": "privatbank",
+      "cardIds": [
+        "privatbank-card"
+      ],
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online",
+        "offline"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Активуйте пропозицію в застосунку PrivatBank.",
+        "actionUrl": "https://privatbank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Дані зі скріну сервісів PrivatBank."
+        ]
+      },
+      "validFrom": "2026-07-01",
+      "validTo": "2026-07-31",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-07-04"
+      },
+      "status": "active",
+      "id": "privatbank-2026-07-bank-books-stationery",
+      "offerKey": "privatbank-bank-books-stationery",
+      "type": "category",
+      "title": "Книги та канцтовари",
+      "description": "До 5% кешбеку на книги та канцтовари.",
+      "categoryIds": [
+        "books"
+      ],
+      "merchantIds": [],
+      "mccCodes": [],
+      "reward": {
+        "type": "percent",
+        "value": 5,
+        "maxAmount": null,
+        "currency": "UAH"
+      }
+    },
+    {
+      "bankId": "privatbank",
+      "cardIds": [
+        "privatbank-card"
+      ],
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online",
+        "offline"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Активуйте пропозицію в застосунку PrivatBank.",
+        "actionUrl": "https://privatbank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Дані зі скріну сервісів PrivatBank."
+        ]
+      },
+      "validFrom": "2026-07-01",
+      "validTo": "2026-07-31",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-07-04"
+      },
+      "status": "active",
+      "id": "privatbank-2026-07-bank-pharmacies",
+      "offerKey": "privatbank-bank-pharmacies",
+      "type": "category",
+      "title": "Аптеки",
+      "description": "До 3% кешбеку в аптеках.",
+      "categoryIds": [
+        "pharmacies"
+      ],
+      "merchantIds": [],
+      "mccCodes": [],
+      "reward": {
+        "type": "percent",
+        "value": 3,
+        "maxAmount": null,
+        "currency": "UAH"
+      }
+    },
+    {
+      "bankId": "privatbank",
+      "cardIds": [
+        "privatbank-card"
+      ],
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online",
+        "offline"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Активуйте пропозицію в застосунку PrivatBank.",
+        "actionUrl": "https://privatbank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Дані зі скріну сервісів PrivatBank."
+        ]
+      },
+      "validFrom": "2026-07-01",
+      "validTo": "2026-07-31",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-07-04"
+      },
+      "status": "active",
+      "id": "privatbank-2026-07-bank-clothing-shoes-kids",
+      "offerKey": "privatbank-bank-clothing-shoes-kids",
+      "type": "category",
+      "title": "Одяг, взуття та дитячі товари",
+      "description": "До 3% кешбеку на одяг, взуття та дитячі товари.",
+      "categoryIds": [
+        "clothing",
+        "shoes",
+        "toys"
+      ],
+      "merchantIds": [],
+      "mccCodes": [],
+      "reward": {
+        "type": "percent",
+        "value": 3,
+        "maxAmount": null,
+        "currency": "UAH"
+      }
+    },
+    {
+      "bankId": "privatbank",
+      "cardIds": [
+        "privatbank-card"
+      ],
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online",
+        "offline"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Активуйте пропозицію в застосунку PrivatBank.",
+        "actionUrl": "https://privatbank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Дані зі скріну сервісів PrivatBank."
+        ]
+      },
+      "validFrom": "2026-07-01",
+      "validTo": "2026-07-31",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-07-04"
+      },
+      "status": "active",
+      "id": "privatbank-2026-07-bank-home-repair",
+      "offerKey": "privatbank-bank-home-repair",
+      "type": "category",
+      "title": "Дім і ремонт",
+      "description": "До 3% кешбеку в магазинах категорії Дім та ремонт.",
+      "categoryIds": [
+        "hardware-stores"
+      ],
+      "merchantIds": [],
+      "mccCodes": [],
+      "reward": {
+        "type": "percent",
+        "value": 3,
+        "maxAmount": null,
+        "currency": "UAH"
+      }
+    },
+    {
+      "bankId": "privatbank",
+      "cardIds": [
+        "privatbank-card"
+      ],
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online",
+        "offline"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Активуйте пропозицію в застосунку PrivatBank.",
+        "actionUrl": "https://privatbank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Дані зі скріну сервісів PrivatBank."
+        ]
+      },
+      "validFrom": "2026-07-01",
+      "validTo": "2026-07-31",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-07-04"
+      },
+      "status": "active",
+      "id": "privatbank-2026-07-partner-run-ukraine",
+      "offerKey": "privatbank-partner-run-ukraine",
+      "type": "partner",
+      "title": "Run Ukraine",
+      "description": "5% знижки на всі послуги Run Ukraine.",
+      "categoryIds": [
+        "fitness"
+      ],
+      "merchantIds": [
+        "run-ukraine"
+      ],
+      "mccCodes": [],
+      "reward": {
+        "type": "percent",
+        "value": 5,
+        "maxAmount": null,
+        "currency": "UAH"
+      }
     }
   ]
 }
