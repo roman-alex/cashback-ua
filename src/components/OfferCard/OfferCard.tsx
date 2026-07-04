@@ -67,7 +67,7 @@ export function OfferCard({
           {subtitle}
         </span>
       </span>
-      <span className="flex shrink-0 flex-col items-end gap-1 pt-0.5">
+      <span className="flex shrink-0 flex-col items-end gap-4 pt-0.5">
         <span className="text-lg font-semibold leading-none">
           {formatRewardValue(offer)}
         </span>
