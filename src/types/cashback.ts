@@ -102,6 +102,9 @@ export interface MonthlyOffersData {
 }
 
 export type SearchMatchType =
+  | "exact-title"
+  | "title-prefix"
+  | "title-contains"
   | "exact-merchant"
   | "merchant-alias"
   | "category"

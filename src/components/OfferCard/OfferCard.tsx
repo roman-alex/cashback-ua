@@ -12,6 +12,7 @@ import {
   Gamepad2,
   Gift,
   Home,
+  Landmark,
   PawPrint,
   Plane,
   Shirt,
@@ -19,6 +20,7 @@ import {
   Smartphone,
   Sparkles,
   Store,
+  Tag,
   Tags,
   Utensils,
   Wrench,
@@ -40,15 +42,22 @@ export function OfferCard({
   const bankBadge = getBankBadge(bankId, bankName);
   const categoryBadge = getCategoryBadge(offer.offer.categoryIds[0]);
   const CategoryIcon = categoryBadge.icon;
+  const sourceBadge = getSourceBadge(offer.offer.type);
+  const SourceIcon = sourceBadge.icon;
   const subtitle = getOfferSubtitle(offer, bankBadge.label);
 
   return (
     <article className="flex w-full items-start gap-3 rounded-md border border-border bg-card px-3 py-2.5 text-card-foreground">
       <span
-        className={`inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-lg text-white shadow-sm ${categoryBadge.className}`}
+        className={`relative inline-flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-xl text-white shadow-sm ${categoryBadge.className}`}
         aria-hidden="true"
       >
-        <CategoryIcon className="h-6 w-6" strokeWidth={2.4} />
+        <CategoryIcon className="h-[26px] w-[26px]" strokeWidth={2.4} />
+        <span
+          className={`absolute -right-1 -top-1 inline-flex h-[22px] w-[22px] items-center justify-center rounded-lg border-2 border-card text-white ${sourceBadge.className}`}
+        >
+          <SourceIcon className="h-3.5 w-3.5" strokeWidth={2.6} />
+        </span>
       </span>
       <span className="min-w-0 flex-1">
         <span className="block break-words text-base font-semibold leading-5">
@@ -73,6 +82,11 @@ export function OfferCard({
 }
 
 interface CategoryBadge {
+  className: string;
+  icon: LucideIcon;
+}
+
+interface SourceBadge {
   className: string;
   icon: LucideIcon;
 }
@@ -208,4 +222,12 @@ function getCategoryBadge(categoryId: string | undefined): CategoryBadge {
     default:
       return { className: "bg-slate-600", icon: Tags };
   }
+}
+
+function getSourceBadge(offerType: string): SourceBadge {
+  if (offerType === "category") {
+    return { className: "bg-yellow-500", icon: Landmark };
+  }
+
+  return { className: "bg-violet-600", icon: Tag };
 }

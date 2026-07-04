@@ -10,6 +10,16 @@ import type { CashbackOffer, OfferSearchMatch } from "@/types/cashback";
 import type { OfferSearchResult, SearchableOffer, SearchDocument } from "./types";
 
 const textMatchScore = 10;
+const exactTitleScore = 140;
+const titlePrefixScore = 130;
+const titleContainsScore = 120;
+const exactMerchantScore = 110;
+const merchantAliasScore = 100;
+const bankAliasScore = 80;
+const categoryOfferScore = 75;
+const categoryScore = 65;
+const categoryAliasOfferScore = 60;
+const categoryAliasScore = 50;
 
 export function buildSearchableOffers(
   offers: CashbackOffer[],
@@ -152,24 +162,50 @@ function getExactMatch(
   searchableOffer: SearchableOffer,
   normalizedQuery: string
 ): OfferSearchMatch | null {
+  const normalizedTitle = searchableOffer.document.title;
+
+  if (normalizedTitle === normalizedQuery) {
+    return { type: "exact-title", score: exactTitleScore };
+  }
+
+  if (normalizedTitle.startsWith(normalizedQuery)) {
+    return { type: "title-prefix", score: titlePrefixScore };
+  }
+
+  if (normalizedTitle.includes(normalizedQuery)) {
+    return { type: "title-contains", score: titleContainsScore };
+  }
+
   if (containsExactValue(searchableOffer.merchantNames, normalizedQuery)) {
-    return { type: "exact-merchant", score: 100 };
+    return { type: "exact-merchant", score: exactMerchantScore };
   }
 
   if (containsExactValue(searchableOffer.merchantAliases, normalizedQuery)) {
-    return { type: "merchant-alias", score: 90 };
+    return { type: "merchant-alias", score: merchantAliasScore };
   }
 
   if (containsExactValue(searchableOffer.bankAliases, normalizedQuery)) {
-    return { type: "text", score: 80 };
+    return { type: "text", score: bankAliasScore };
   }
 
   if (containsExactValue(searchableOffer.categoryNames, normalizedQuery)) {
-    return { type: "category", score: 70 };
+    return {
+      type: "category",
+      score:
+        searchableOffer.offer.type === "category"
+          ? categoryOfferScore
+          : categoryScore,
+    };
   }
 
   if (containsExactValue(searchableOffer.categoryAliases, normalizedQuery)) {
-    return { type: "category-alias", score: 60 };
+    return {
+      type: "category-alias",
+      score:
+        searchableOffer.offer.type === "category"
+          ? categoryAliasOfferScore
+          : categoryAliasScore,
+    };
   }
 
   return null;
