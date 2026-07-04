@@ -67,12 +67,12 @@ export function OfferCard({
           {subtitle}
         </span>
       </span>
-      <span className="flex shrink-0 flex-col items-end gap-4 pt-0.5">
+      <span className="flex shrink-0 flex-col items-end gap-3 pt-0.5">
         <span className="text-lg font-semibold leading-none">
           {formatRewardValue(offer)}
         </span>
         <span
-          className={`inline-flex w-[45px] justify-center rounded-sm px-1 py-0.5 text-[10px] font-semibold leading-none text-white ${bankBadge.className}`}
+          className={`inline-flex w-[45px] justify-center rounded-sm px-1 py-0.5 text-[10px] font-semibold text-white ${bankBadge.className}`}
         >
           {bankBadge.label}
         </span>
