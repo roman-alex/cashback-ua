@@ -113,7 +113,7 @@ function getBankBadge(bankId: string, bankName: string) {
     case "abank":
       return {
         className: "bg-green-600",
-        label: "abank",
+        label: "Abank",
       };
     case "kasta":
       return {
@@ -123,7 +123,7 @@ function getBankBadge(bankId: string, bankName: string) {
     case "monobank":
       return {
         className: "bg-cyan-600",
-        label: "mono",
+        label: "Mono",
       };
     case "pumb":
       return {

@@ -1,14 +1,18 @@
 import { Search, X } from "lucide-react";
 
+import { cn } from "@/lib/utils";
+
 export function SearchInput({
+  className,
   onChange,
   value,
 }: {
+  className?: string;
   onChange: (value: string) => void;
   value: string;
 }) {
   return (
-    <label className="block">
+    <label className={cn("block", className)}>
       <span className="sr-only">Пошук кешбеків</span>
       <span className="flex h-12 items-center gap-3 rounded-md border border-input bg-background px-3 focus-within:ring-2 focus-within:ring-ring">
         <Search className="h-5 w-5 shrink-0 text-muted-foreground" aria-hidden="true" />
