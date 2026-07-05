@@ -47,7 +47,7 @@ export function OfferCard({
   const subtitle = getOfferSubtitle(offer, bankBadge.label);
 
   return (
-    <article className="flex w-full items-start gap-3 rounded-md border border-border bg-card px-3 py-2.5 text-card-foreground">
+    <article className="flex w-full items-start gap-3 rounded-xl border border-border bg-card px-3 py-2.5 text-card-foreground">
       <span
         className={`relative inline-flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-xl text-white shadow-sm ${categoryBadge.className}`}
         aria-hidden="true"
@@ -226,7 +226,7 @@ function getCategoryBadge(categoryId: string | undefined): CategoryBadge {
 
 function getSourceBadge(offerType: string): SourceBadge {
   if (offerType === "category") {
-    return { className: "bg-yellow-500", icon: Landmark };
+    return { className: "bg-orange-500", icon: Landmark };
   }
 
   return { className: "bg-violet-600", icon: Tag };

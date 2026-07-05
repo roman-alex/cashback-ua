@@ -89,7 +89,7 @@ export function SearchPage() {
                 aria-expanded={isBankFilterOpen}
                 aria-label="Фільтр банків"
                 className={cn(
-                  "inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-md border border-border bg-card text-muted-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+                  "inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-border bg-card text-muted-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
                   isBankFilterOpen && "border-transparent text-primary ring-2 ring-ring"
                 )}
                 onClick={() => setIsBankFilterOpen((isOpen) => !isOpen)}
@@ -145,7 +145,7 @@ function BankFilterPanel({
   onToggleBank: (bankId: string) => void;
 }) {
   return (
-    <div className="grid grid-cols-3 gap-1.5 rounded-md border border-border bg-card p-1.5">
+    <div className="grid grid-cols-3 gap-1.5 rounded-xl border border-border bg-card p-1.5">
       {banks
         .filter((bank) => bank.active)
         .map((bank) => {
@@ -154,7 +154,7 @@ function BankFilterPanel({
           return (
             <button
               className={cn(
-                "flex h-8 items-center justify-center rounded px-2 text-center text-xs font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+                "flex h-8 items-center justify-center rounded-lg px-2 text-center text-xs font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
                 isEnabled
                   ? "bg-primary text-primary-foreground"
                   : "bg-muted text-muted-foreground"
@@ -255,7 +255,7 @@ function EmptyState({
   title: string;
 }) {
   return (
-    <div className="rounded-md border border-dashed border-border bg-card p-5 text-card-foreground">
+    <div className="rounded-xl border border-dashed border-border bg-card p-5 text-card-foreground">
       <h2 className="text-lg font-semibold">{title}</h2>
       <p className="mt-1 text-sm text-muted-foreground">{text}</p>
       {action ? <div className="mt-4">{action}</div> : null}

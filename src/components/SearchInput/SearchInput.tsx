@@ -14,7 +14,7 @@ export function SearchInput({
   return (
     <label className={cn("block", className)}>
       <span className="sr-only">Пошук кешбеків</span>
-      <span className="flex h-12 items-center gap-3 rounded-md border border-input bg-background px-3 focus-within:ring-2 focus-within:ring-ring">
+      <span className="flex h-12 items-center gap-3 rounded-xl border border-input bg-background px-3 focus-within:ring-2 focus-within:ring-ring">
         <Search className="h-5 w-5 shrink-0 text-muted-foreground" aria-hidden="true" />
         <input
           className="min-w-0 flex-1 bg-transparent text-base outline-none placeholder:text-muted-foreground"
