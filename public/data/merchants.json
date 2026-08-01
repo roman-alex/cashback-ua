@@ -1104,7 +1104,8 @@
     "name": "Онлайн Фітнес",
     "aliases": [
       "Online Fitness",
-      "онлайн тренування"
+      "онлайн тренування",
+      "Total Fitness"
     ],
     "categoryIds": [
       "fitness"
@@ -2163,5 +2164,402 @@
     ],
     "mccCodes": [],
     "active": true
+  },
+  {
+    "id": "fozzyshop",
+    "name": "fozzyshop.ua",
+    "aliases": [
+      "Fozzy Shop",
+      "Фоззі",
+      "Фоззішоп"
+    ],
+    "categoryIds": [
+      "products"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "megogo",
+    "name": "MEGOGO",
+    "aliases": [
+      "Мегого"
+    ],
+    "categoryIds": [
+      "entertainment"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "ispace",
+    "name": "iSpace",
+    "aliases": [
+      "Айспейс",
+      "i Space"
+    ],
+    "categoryIds": [
+      "electronics",
+      "apple-tech"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "travka",
+    "name": "TRAVKA",
+    "aliases": [
+      "Травка"
+    ],
+    "categoryIds": [
+      "products",
+      "healthy-food"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "intellectum",
+    "name": "INTELLECTUM",
+    "aliases": [
+      "Інтелектум"
+    ],
+    "categoryIds": [
+      "books",
+      "education"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "glovo",
+    "name": "Glovo",
+    "aliases": [
+      "Глово"
+    ],
+    "categoryIds": [
+      "products",
+      "restaurants"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "holdyou",
+    "name": "HoldYou",
+    "aliases": [
+      "Hold You",
+      "Холд Ю"
+    ],
+    "categoryIds": [
+      "beauty",
+      "medical"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "fenix",
+    "name": "Fenix",
+    "aliases": [
+      "Фенікс"
+    ],
+    "categoryIds": [
+      "sports",
+      "active-leisure"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "eko-market",
+    "name": "ЕКО Маркет",
+    "aliases": [
+      "EKO Market",
+      "ЭКО Маркет"
+    ],
+    "categoryIds": [
+      "products"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "fest-delivery",
+    "name": "!FEST Доставка",
+    "aliases": [
+      "!FEST",
+      "ФЕСТ Доставка",
+      "Fest Delivery"
+    ],
+    "categoryIds": [
+      "products",
+      "restaurants"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "philips",
+    "name": "Philips",
+    "aliases": [
+      "Філіпс"
+    ],
+    "categoryIds": [
+      "electronics"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "x-ads",
+    "name": "X Ads",
+    "aliases": [
+      "Twitter Ads",
+      "Твіттер реклама"
+    ],
+    "categoryIds": [
+      "advertising"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "google-ads",
+    "name": "Google Ads",
+    "aliases": [
+      "Гугл Ads",
+      "Google Реклама"
+    ],
+    "categoryIds": [
+      "advertising"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "linkedin-ads",
+    "name": "LinkedIn Ads",
+    "aliases": [
+      "LinkedIn Advertising",
+      "Лінкедін реклама"
+    ],
+    "categoryIds": [
+      "advertising"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "meta-ads",
+    "name": "Meta Ads",
+    "aliases": [
+      "Facebook Ads",
+      "Instagram Ads",
+      "Мета реклама"
+    ],
+    "categoryIds": [
+      "advertising"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "google-cloud",
+    "name": "Google Cloud",
+    "aliases": [
+      "Гугл Клауд"
+    ],
+    "categoryIds": [
+      "cloud-services",
+      "software"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "finmap",
+    "name": "Фінмап",
+    "aliases": [
+      "Finmap"
+    ],
+    "categoryIds": [
+      "software",
+      "legal-accounting"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "google-workspace",
+    "name": "Google Workspace",
+    "aliases": [
+      "Google Suite",
+      "Гугл Воркспейс"
+    ],
+    "categoryIds": [
+      "cloud-services",
+      "software"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "microsoft-365",
+    "name": "Microsoft 365",
+    "aliases": [
+      "Office 365",
+      "Майкрософт 365"
+    ],
+    "categoryIds": [
+      "software",
+      "cloud-services"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "regus",
+    "name": "Regus",
+    "aliases": [
+      "Регус"
+    ],
+    "categoryIds": [
+      "coworking"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "augustum",
+    "name": "Августум",
+    "aliases": [
+      "Augustum"
+    ],
+    "categoryIds": [
+      "legal-accounting"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "taxer",
+    "name": "TAXER",
+    "aliases": [
+      "Таксер"
+    ],
+    "categoryIds": [
+      "legal-accounting",
+      "software"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "natali-bolgar",
+    "name": "Natali Bolgar",
+    "aliases": [
+      "Наталі Болгар"
+    ],
+    "categoryIds": [
+      "clothing"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "mccCodes": [],
+    "active": true,
+    "id": "rozetka",
+    "name": "ROZETKA",
+    "aliases": [
+      "Rozetka",
+      "Розетка"
+    ],
+    "categoryIds": [
+      "electronics",
+      "home",
+      "products"
+    ]
+  },
+  {
+    "mccCodes": [],
+    "active": true,
+    "id": "youtv",
+    "name": "youTV",
+    "aliases": [
+      "youtv",
+      "you tv",
+      "ютв"
+    ],
+    "categoryIds": [
+      "entertainment"
+    ]
+  },
+  {
+    "mccCodes": [],
+    "active": true,
+    "id": "veloplaneta",
+    "name": "Велопланета",
+    "aliases": [
+      "Veloplaneta",
+      "Велопланета онлайн"
+    ],
+    "categoryIds": [
+      "sports"
+    ]
+  },
+  {
+    "mccCodes": [],
+    "active": true,
+    "id": "stretch-hall",
+    "name": "Stretch Hall",
+    "aliases": [
+      "Стретч Хол",
+      "Stretch Hall онлайн"
+    ],
+    "categoryIds": [
+      "fitness"
+    ]
+  },
+  {
+    "mccCodes": [],
+    "active": true,
+    "id": "kodi-professional",
+    "name": "Kodi Professional",
+    "aliases": [
+      "Kodi",
+      "Коді"
+    ],
+    "categoryIds": [
+      "beauty"
+    ]
+  },
+  {
+    "mccCodes": [],
+    "active": true,
+    "id": "posteleon",
+    "name": "Posteleon",
+    "aliases": [
+      "Постелеон",
+      "Posteleon текстиль"
+    ],
+    "categoryIds": [
+      "home"
+    ]
+  },
+  {
+    "mccCodes": [],
+    "active": true,
+    "id": "privat24-transfers",
+    "name": "Міжнародні перекази в Privat24",
+    "aliases": [
+      "Privat24",
+      "міжнародні перекази",
+      "P2P"
+    ],
+    "categoryIds": [
+      "money-transfers"
+    ]
   }
 ]

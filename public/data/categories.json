@@ -706,5 +706,82 @@
       "game"
     ],
     "mccCodes": []
+  },
+  {
+    "id": "advertising",
+    "name": "Реклама",
+    "aliases": [
+      "реклама",
+      "ads",
+      "маркетинг"
+    ],
+    "mccCodes": []
+  },
+  {
+    "id": "cloud-services",
+    "name": "Хмарні сервіси",
+    "aliases": [
+      "хмара",
+      "cloud",
+      "google cloud",
+      "workspace"
+    ],
+    "mccCodes": []
+  },
+  {
+    "id": "software",
+    "name": "Програмне забезпечення",
+    "aliases": [
+      "софт",
+      "software",
+      "підписка",
+      "microsoft"
+    ],
+    "mccCodes": []
+  },
+  {
+    "id": "coworking",
+    "name": "Робочі простори",
+    "aliases": [
+      "коворкінг",
+      "офіс",
+      "робочий простір"
+    ],
+    "mccCodes": []
+  },
+  {
+    "id": "legal-accounting",
+    "name": "Юридичні та бухгалтерські послуги",
+    "aliases": [
+      "юрист",
+      "бухгалтерія",
+      "звітність",
+      "консультація"
+    ],
+    "mccCodes": []
+  },
+  {
+    "mccCodes": [],
+    "active": true,
+    "id": "stationery",
+    "name": "Канцтовари",
+    "aliases": [
+      "канцтовари",
+      "канцелярія",
+      "зошити",
+      "офісні товари"
+    ]
+  },
+  {
+    "mccCodes": [],
+    "active": true,
+    "id": "money-transfers",
+    "name": "Грошові перекази",
+    "aliases": [
+      "перекази",
+      "міжнародні перекази",
+      "privat24",
+      "p2p"
+    ]
   }
 ]
