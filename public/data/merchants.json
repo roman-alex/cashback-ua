@@ -2561,5 +2561,45 @@
     "categoryIds": [
       "money-transfers"
     ]
+  },
+  {
+    "id": "sane",
+    "name": "SANE",
+    "aliases": [
+      "SANE",
+      "Сейн"
+    ],
+    "categoryIds": [
+      "beauty"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "prostor",
+    "name": "PROSTOR.UA",
+    "aliases": [
+      "PROSTOR.UA",
+      "Prostor",
+      "Простор"
+    ],
+    "categoryIds": [
+      "beauty"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "isei",
+    "name": "ISEI",
+    "aliases": [
+      "ISEI",
+      "Ісей"
+    ],
+    "categoryIds": [
+      "beauty"
+    ],
+    "mccCodes": [],
+    "active": true
   }
 ]
