@@ -1,6 +1,6 @@
 {
   "period": "2026-09",
-  "updatedAt": "2026-09-01T11:25:00+03:00",
+  "updatedAt": "2026-09-20T12:00:00+03:00",
   "offers": [
     {
       "id": "monobank-2026-09-bank-books",
@@ -9851,6 +9851,3314 @@
         "paymentSystems": [],
         "notes": [
           "Від партнерів. Можна додати 5 категорій."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-bank-gadgets-payment",
+      "offerKey": "sense-bank-gadgets-payment",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "category",
+      "title": "За оплату гаджетом",
+      "description": "0.5% кредитні, 0.25% власні.",
+      "categoryIds": [
+        "gadgets-payment"
+      ],
+      "merchantIds": [],
+      "reward": {
+        "type": "percent",
+        "value": 0.5,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online",
+        "offline"
+      ],
+      "activation": {
+        "mode": "category-selection",
+        "requiredBeforePurchase": true,
+        "instructions": "Виберіть категорію в застосунку Sense Bank на цей місяць.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "На скриншоті вибрано 5 категорій. Загальний ліміт — до 500 бонусів на місяць."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-bank-clothing",
+      "offerKey": "sense-bank-clothing",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "category",
+      "title": "Одяг",
+      "description": "1.5% кредитні, 1% власні.",
+      "categoryIds": [
+        "clothing"
+      ],
+      "merchantIds": [],
+      "reward": {
+        "type": "percent",
+        "value": 1.5,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online",
+        "offline"
+      ],
+      "activation": {
+        "mode": "category-selection",
+        "requiredBeforePurchase": true,
+        "instructions": "Виберіть категорію в застосунку Sense Bank на цей місяць.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "На скриншоті вибрано 5 категорій. Загальний ліміт — до 500 бонусів на місяць."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-bank-fitness",
+      "offerKey": "sense-bank-fitness",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "category",
+      "title": "Спорт та фітнес",
+      "description": "2% кредитні, 1% власні.",
+      "categoryIds": [
+        "fitness"
+      ],
+      "merchantIds": [],
+      "reward": {
+        "type": "percent",
+        "value": 2,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online",
+        "offline"
+      ],
+      "activation": {
+        "mode": "category-selection",
+        "requiredBeforePurchase": true,
+        "instructions": "Виберіть категорію в застосунку Sense Bank на цей місяць.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "На скриншоті вибрано 5 категорій. Загальний ліміт — до 500 бонусів на місяць."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-bank-electronics",
+      "offerKey": "sense-bank-electronics",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "category",
+      "title": "Техніка",
+      "description": "1.5% кредитні, 1% власні.",
+      "categoryIds": [
+        "electronics"
+      ],
+      "merchantIds": [],
+      "reward": {
+        "type": "percent",
+        "value": 1.5,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online",
+        "offline"
+      ],
+      "activation": {
+        "mode": "category-selection",
+        "requiredBeforePurchase": true,
+        "instructions": "Виберіть категорію в застосунку Sense Bank на цей місяць.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "На скриншоті вибрано 5 категорій. Загальний ліміт — до 500 бонусів на місяць."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-rozetka",
+      "offerKey": "sense-rozetka",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "ROZETKA",
+      "description": "До 200 грн знижки на маркетплейсі.",
+      "categoryIds": [
+        "electronics",
+        "home",
+        "products"
+      ],
+      "merchantIds": [
+        "rozetka"
+      ],
+      "reward": {
+        "type": "fixed",
+        "value": 200,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-iherb",
+      "offerKey": "sense-iherb",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "iHerb онлайн",
+      "description": "15% знижки на красу та догляд.",
+      "categoryIds": [
+        "supplements",
+        "beauty"
+      ],
+      "merchantIds": [
+        "iherb"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 15,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-lvivska-majsternya-shokoladu",
+      "offerKey": "sense-lvivska-majsternya-shokoladu",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Львівська майстерня шоколаду",
+      "description": "5% кешбек на кондитерські товари.",
+      "categoryIds": [
+        "chocolate"
+      ],
+      "merchantIds": [
+        "lvivska-majsternya-shokoladu"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 5,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-veloplaneta",
+      "offerKey": "sense-veloplaneta",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Велопланета онлайн",
+      "description": "6% кешбек.",
+      "categoryIds": [
+        "sports"
+      ],
+      "merchantIds": [
+        "veloplaneta"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 6,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-samsung-experience-store",
+      "offerKey": "sense-samsung-experience-store",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Samsung Experience Store",
+      "description": "3% кешбек на техніку.",
+      "categoryIds": [
+        "electronics"
+      ],
+      "merchantIds": [
+        "samsung-experience-store"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 3,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-tous",
+      "offerKey": "sense-tous",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "TOUS",
+      "description": "5% кешбек.",
+      "categoryIds": [
+        "jewelry",
+        "gifts"
+      ],
+      "merchantIds": [
+        "tous"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 5,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-megogo-books",
+      "offerKey": "sense-megogo-books",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "MEGOGO BOOKS",
+      "description": "10% кешбек на книги.",
+      "categoryIds": [
+        "books"
+      ],
+      "merchantIds": [
+        "megogo-books"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 10,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-budynok-ihrashok",
+      "offerKey": "sense-budynok-ihrashok",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Будинок іграшок онлайн",
+      "description": "5% кешбек на дитячі товари.",
+      "categoryIds": [
+        "toys"
+      ],
+      "merchantIds": [
+        "budynok-ihrashok"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 5,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-yabluka",
+      "offerKey": "sense-yabluka",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "YABLUKA онлайн",
+      "description": "5% кешбек на техніку.",
+      "categoryIds": [
+        "electronics",
+        "apple-tech"
+      ],
+      "merchantIds": [
+        "yabluka"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 5,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-love-you",
+      "offerKey": "sense-love-you",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Love You",
+      "description": "8% знижки.",
+      "categoryIds": [
+        "jewelry",
+        "beauty"
+      ],
+      "merchantIds": [
+        "love-you"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 8,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-cher17",
+      "offerKey": "sense-cher17",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "CHER'17 онлайн",
+      "description": "8% кешбек на взуття та одяг.",
+      "categoryIds": [
+        "shoes",
+        "clothing"
+      ],
+      "merchantIds": [
+        "cher17"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 8,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-must-have",
+      "offerKey": "sense-must-have",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "MustHave онлайн",
+      "description": "7% кешбек на одяг.",
+      "categoryIds": [
+        "clothing"
+      ],
+      "merchantIds": [
+        "must-have"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 7,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-kachorovska",
+      "offerKey": "sense-kachorovska",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Kachorovska онлайн",
+      "description": "6% кешбек на взуття.",
+      "categoryIds": [
+        "shoes"
+      ],
+      "merchantIds": [
+        "kachorovska"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 6,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-varus",
+      "offerKey": "sense-varus",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "VARUS онлайн",
+      "description": "150 грн знижки на продукти.",
+      "categoryIds": [
+        "products"
+      ],
+      "merchantIds": [
+        "varus"
+      ],
+      "reward": {
+        "type": "fixed",
+        "value": 150,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-modoza",
+      "offerKey": "sense-modoza",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Modoza",
+      "description": "225 Cash'u бонусів на одяг.",
+      "categoryIds": [
+        "clothing"
+      ],
+      "merchantIds": [
+        "modoza"
+      ],
+      "reward": {
+        "type": "fixed",
+        "value": 225,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-gepur",
+      "offerKey": "sense-gepur",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "GEPUR",
+      "description": "8% кешбек на одяг.",
+      "categoryIds": [
+        "clothing"
+      ],
+      "merchantIds": [
+        "gepur"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 8,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-pleso",
+      "offerKey": "sense-pleso",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "pleso онлайн",
+      "description": "10% кешбек.",
+      "categoryIds": [
+        "psychotherapy"
+      ],
+      "merchantIds": [
+        "pleso"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 10,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-sushi-master",
+      "offerKey": "sense-sushi-master",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Sushi Master онлайн",
+      "description": "5% кешбек на кафе та ресторани.",
+      "categoryIds": [
+        "restaurants"
+      ],
+      "merchantIds": [
+        "sushi-master"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 5,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-justschool",
+      "offerKey": "sense-justschool",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "JustSchool",
+      "description": "5% знижки на освітні курси.",
+      "categoryIds": [
+        "education"
+      ],
+      "merchantIds": [
+        "justschool"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 5,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-mink",
+      "offerKey": "sense-mink",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "MINK",
+      "description": "15% знижки на хімчистки.",
+      "categoryIds": [
+        "dry-cleaning"
+      ],
+      "merchantIds": [
+        "mink"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 15,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-samsonite",
+      "offerKey": "sense-samsonite",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Samsonite онлайн",
+      "description": "7% кешбек.",
+      "categoryIds": [
+        "bags"
+      ],
+      "merchantIds": [
+        "samsonite"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 7,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-apteka-anc",
+      "offerKey": "sense-apteka-anc",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "АНЦ",
+      "description": "50 грн знижки в аптеках.",
+      "categoryIds": [
+        "pharmacies"
+      ],
+      "merchantIds": [
+        "apteka-anc"
+      ],
+      "reward": {
+        "type": "fixed",
+        "value": 50,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-mathema",
+      "offerKey": "sense-mathema",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Mathema.me",
+      "description": "7% кешбек на освітні курси.",
+      "categoryIds": [
+        "education"
+      ],
+      "merchantIds": [
+        "mathema"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 7,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-kibernetyky",
+      "offerKey": "sense-kibernetyky",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Кібернетики",
+      "description": "5% кешбек на техніку.",
+      "categoryIds": [
+        "electronics"
+      ],
+      "merchantIds": [
+        "kibernetyky"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 5,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-oxford-medical",
+      "offerKey": "sense-oxford-medical",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Оксфорд Медікал",
+      "description": "3% кешбек у медзакладах.",
+      "categoryIds": [
+        "medical"
+      ],
+      "merchantIds": [
+        "oxford-medical"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 3,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-antischool",
+      "offerKey": "sense-antischool",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "AntiSchool онлайн",
+      "description": "20% знижки на освітні курси.",
+      "categoryIds": [
+        "education"
+      ],
+      "merchantIds": [
+        "antischool"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 20,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-leroy-merlin",
+      "offerKey": "sense-leroy-merlin",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Leroy Merlin онлайн",
+      "description": "3% кешбек на все для дому.",
+      "categoryIds": [
+        "hardware-stores",
+        "home"
+      ],
+      "merchantIds": [
+        "leroy-merlin"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 3,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-goteens",
+      "offerKey": "sense-goteens",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "GoITeens",
+      "description": "700 грн знижки на освітні курси.",
+      "categoryIds": [
+        "education"
+      ],
+      "merchantIds": [
+        "goteens"
+      ],
+      "reward": {
+        "type": "fixed",
+        "value": 700,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-kims",
+      "offerKey": "sense-kims",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "KIMS",
+      "description": "30% знижки на хімчистки.",
+      "categoryIds": [
+        "dry-cleaning"
+      ],
+      "merchantIds": [
+        "kims"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 30,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-knyharnia-e",
+      "offerKey": "sense-knyharnia-e",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Книгарня Є онлайн",
+      "description": "4% кешбек на книги.",
+      "categoryIds": [
+        "books"
+      ],
+      "merchantIds": [
+        "knyharnia-e"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 4,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-optima-hotels",
+      "offerKey": "sense-optima-hotels",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Optima Hotels & Resorts",
+      "description": "10% знижки на готелі.",
+      "categoryIds": [
+        "hotels"
+      ],
+      "merchantIds": [
+        "optima-hotels"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 10,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-tickets-ua",
+      "offerKey": "sense-tickets-ua",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Tickets.ua застосунок",
+      "description": "5% кешбек на транспорт та авіаквитки.",
+      "categoryIds": [
+        "transport",
+        "air-tickets",
+        "tickets"
+      ],
+      "merchantIds": [
+        "tickets-ua"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 5,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-agro-market",
+      "offerKey": "sense-agro-market",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Agro-Market онлайн",
+      "description": "7% кешбек на все для дому.",
+      "categoryIds": [
+        "garden",
+        "home"
+      ],
+      "merchantIds": [
+        "agro-market"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 7,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-bagland",
+      "offerKey": "sense-bagland",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Bagland онлайн",
+      "description": "10% кешбек на інше та одяг.",
+      "categoryIds": [
+        "bags",
+        "clothing"
+      ],
+      "merchantIds": [
+        "bagland"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 10,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-robinzon",
+      "offerKey": "sense-robinzon",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "ROBINZON онлайн",
+      "description": "7% кешбек на спорт та фітнес.",
+      "categoryIds": [
+        "tourism",
+        "sports"
+      ],
+      "merchantIds": [
+        "robinzon"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 7,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-terra-incognita",
+      "offerKey": "sense-terra-incognita",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Terra Incognita",
+      "description": "10% знижки на одяг, все для дому, спорт та фітнес.",
+      "categoryIds": [
+        "clothing",
+        "home",
+        "tourism",
+        "sports"
+      ],
+      "merchantIds": [
+        "terra-incognita"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 10,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-online-fitness",
+      "offerKey": "sense-online-fitness",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Total Fitness",
+      "description": "20% знижки на спорт та фітнес.",
+      "categoryIds": [
+        "fitness"
+      ],
+      "merchantIds": [
+        "online-fitness"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 20,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-atb",
+      "offerKey": "sense-atb",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "АТБ",
+      "description": "2% кешбек за оплату карткою АТБ.",
+      "categoryIds": [
+        "products"
+      ],
+      "merchantIds": [
+        "atb"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 2,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "offline"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-moyo",
+      "offerKey": "sense-moyo",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "MOYO",
+      "description": "3% кешбек на техніку.",
+      "categoryIds": [
+        "electronics"
+      ],
+      "merchantIds": [
+        "moyo"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 3,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-atb-online",
+      "offerKey": "sense-atb-online",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "АТБ онлайн",
+      "description": "2% кешбек за оплату карткою АТБ онлайн.",
+      "categoryIds": [
+        "products"
+      ],
+      "merchantIds": [
+        "atb"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 2,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-bomond",
+      "offerKey": "sense-bomond",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Bomond онлайн",
+      "description": "6% кешбек на красу та догляд.",
+      "categoryIds": [
+        "beauty"
+      ],
+      "merchantIds": [
+        "bomond"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 6,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-englishdom",
+      "offerKey": "sense-englishdom",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Englishdom",
+      "description": "10% знижки на освітні курси.",
+      "categoryIds": [
+        "education"
+      ],
+      "merchantIds": [
+        "englishdom"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 10,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-stretch-hall",
+      "offerKey": "sense-stretch-hall",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Stretch Hall",
+      "description": "15% знижки на спорт та фітнес.",
+      "categoryIds": [
+        "fitness"
+      ],
+      "merchantIds": [
+        "stretch-hall"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 15,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-ukrposhta",
+      "offerKey": "sense-ukrposhta",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "УКРПОШТА",
+      "description": "20% знижки.",
+      "categoryIds": [
+        "postal-services"
+      ],
+      "merchantIds": [
+        "ukrposhta"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 20,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-hillary-cosmetics",
+      "offerKey": "sense-hillary-cosmetics",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "HiLLARY Cosmetics онлайн",
+      "description": "10% знижки на красу та догляд.",
+      "categoryIds": [
+        "beauty"
+      ],
+      "merchantIds": [
+        "hillary-cosmetics"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 10,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-ameda",
+      "offerKey": "sense-ameda",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "АМЕДА",
+      "description": "5% кешбек у медзакладах.",
+      "categoryIds": [
+        "medical"
+      ],
+      "merchantIds": [
+        "ameda"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 5,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-storgom",
+      "offerKey": "sense-storgom",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "STORGOM онлайн",
+      "description": "3% кешбек на все для дому та техніку.",
+      "categoryIds": [
+        "tools",
+        "home",
+        "electronics"
+      ],
+      "merchantIds": [
+        "storgom"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 3,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-kodi-professional",
+      "offerKey": "sense-kodi-professional",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Kodi Professional онлайн",
+      "description": "20% знижки на красу та догляд.",
+      "categoryIds": [
+        "beauty"
+      ],
+      "merchantIds": [
+        "kodi-professional"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 20,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-sisters-aroma",
+      "offerKey": "sense-sisters-aroma",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Sister's Aroma онлайн",
+      "description": "20% знижки на красу та догляд.",
+      "categoryIds": [
+        "aroma",
+        "beauty"
+      ],
+      "merchantIds": [
+        "sisters-aroma"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 20,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-bank-flowers",
+      "offerKey": "sense-bank-flowers",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "category",
+      "title": "Квіти",
+      "description": "6% кредитні, 5% власні.",
+      "categoryIds": [
+        "flowers"
+      ],
+      "merchantIds": [],
+      "reward": {
+        "type": "percent",
+        "value": 6,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online",
+        "offline"
+      ],
+      "activation": {
+        "mode": "category-selection",
+        "requiredBeforePurchase": true,
+        "instructions": "Виберіть категорію в застосунку Sense Bank на цей місяць.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "На скриншоті вибрано 5 категорій. Загальний ліміт — до 500 бонусів на місяць."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-klr-bus",
+      "offerKey": "sense-klr-bus",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "KLR Bus",
+      "description": "5% знижки на транспорт.",
+      "categoryIds": [
+        "bus-travel"
+      ],
+      "merchantIds": [
+        "klr-bus"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 5,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-prom",
+      "offerKey": "sense-prom",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Prom",
+      "description": "2% кешбек на маркетплейсі.",
+      "categoryIds": [
+        "home"
+      ],
+      "merchantIds": [
+        "prom"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 2,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-mola",
+      "offerKey": "sense-mola",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "MOLA",
+      "description": "21% кешбек на красу та догляд.",
+      "categoryIds": [
+        "beauty"
+      ],
+      "merchantIds": [
+        "mola"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 21,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-foxtrot",
+      "offerKey": "sense-foxtrot",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Фокстрот",
+      "description": "7% знижки на техніку.",
+      "categoryIds": [
+        "electronics"
+      ],
+      "merchantIds": [
+        "foxtrot"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 7,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-sushi-icons",
+      "offerKey": "sense-sushi-icons",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Sushi Icons онлайн",
+      "description": "10% знижки у кафе та ресторанах.",
+      "categoryIds": [
+        "restaurants"
+      ],
+      "merchantIds": [
+        "sushi-icons"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 10,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-exist-assistance",
+      "offerKey": "sense-exist-assistance",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Exist Assistance онлайн",
+      "description": "15% знижки на автосервіс.",
+      "categoryIds": [
+        "auto"
+      ],
+      "merchantIds": [
+        "exist-assistance"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 15,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "online"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
+        ]
+      }
+    },
+    {
+      "id": "sense-2026-09-sushi-master-offline",
+      "offerKey": "sense-sushi-master-offline",
+      "bankId": "sense",
+      "cardIds": [
+        "sense-card"
+      ],
+      "mccCodes": [],
+      "validFrom": "2026-09-01",
+      "validTo": "2026-09-30",
+      "source": {
+        "type": "manual",
+        "url": null,
+        "verifiedAt": "2026-09-20"
+      },
+      "status": "active",
+      "type": "partner",
+      "title": "Sushi Master",
+      "description": "5% кешбек у закладах Sushi Master.",
+      "categoryIds": [
+        "restaurants"
+      ],
+      "merchantIds": [
+        "sushi-master"
+      ],
+      "reward": {
+        "type": "percent",
+        "value": 5,
+        "maxAmount": null,
+        "currency": "UAH"
+      },
+      "fundingSources": [
+        "own",
+        "credit"
+      ],
+      "channels": [
+        "offline"
+      ],
+      "activation": {
+        "mode": "manual",
+        "requiredBeforePurchase": true,
+        "instructions": "Додайте пропозицію від партнерів у застосунку Sense Bank.",
+        "actionUrl": "https://sensebank.ua/"
+      },
+      "conditions": {
+        "minPurchaseAmount": null,
+        "firstPurchaseOnly": false,
+        "newCustomerOnly": false,
+        "paymentSystems": [],
+        "notes": [
+          "Від партнерів Sense Bank."
         ]
       }
     }

@@ -2601,5 +2601,43 @@
     ],
     "mccCodes": [],
     "active": true
+  },
+  {
+    "id": "prom",
+    "name": "Prom",
+    "aliases": [
+      "Prom.ua",
+      "Пром"
+    ],
+    "categoryIds": [
+      "home"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "mola",
+    "name": "MOLA",
+    "aliases": [
+      "МОЛА"
+    ],
+    "categoryIds": [
+      "beauty"
+    ],
+    "mccCodes": [],
+    "active": true
+  },
+  {
+    "id": "exist-assistance",
+    "name": "Exist Assistance",
+    "aliases": [
+      "Exist",
+      "Екзіст Асістанс"
+    ],
+    "categoryIds": [
+      "auto"
+    ],
+    "mccCodes": [],
+    "active": true
   }
 ]
